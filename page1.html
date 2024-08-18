@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    <div data-include-path="header.html"></div> 
+    <div data-include-path="lnb.html"></div> 
+    <div class="searchBar">
+        <div class="box">
+            소싱사이트 선택
+            <select>
+                <option value="아마존">아마존</option>
+                <option value="알리 익스프레스">알리 익스프레스</option>
+                <option value="테무">테무</option>
+                <option value="이베이">이베이</option>
+                <option value="라쿠텐">라쿠텐</option>
+                <option value="타오바오">타오바오</option>
+            </select>
+        </div>
+        <div class="box">
+            수집키워드 입력
+            <input type="text">
+            <div class="btn-blue">추가</div>
+            <div class="btn-skyblue">링크열기</div>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="검색어 입력" class="search">
+            <div class="btn-black">검색</div>
+            <label><input type="radio" name="name1" checked>URL 입력</label>
+            <label><input type="radio" name="name1">검색어 입력</label>
+        </div>
+    </div>
+
+
+    <div class="contents">
+        <h1>상품 수집</h1>
+
+        <div class="filter">
+            <div class="top">
+                <div class="filterName">수집옵션</div>
+                <div class="flex">
+                    <div class="commandBtn">선택 상품 수집</div>
+                    <div class="commandBtn">선택 상품 수집</div>
+                    <div class="commandBtn">선택 상품 수집</div>
+                </div>
+            </div>
+            <div class="bottom flex">
+
+                <div class="toggleBtnBox">
+                    <label class="toggleBtn"><input type="checkbox" checked><span>원가 수집</span></label>
+                    <label class="toggleBtn"><input type="checkbox"><span>금지어 수집</span></label>
+                    <label class="toggleBtn"><input type="checkbox"><span>광고 상품 수집</span></label>
+                    <label class="toggleBtn"><input type="checkbox"><span>성인 제품 수집</span></label>
+                    <label class="toggleBtn"><input type="checkbox"><span>금지코드 수집</span></label>
+                </div>
+
+                <div class="box">
+                    번역 API
+                    <select>
+                        <option value="파파고">파파고</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    마진 설정
+                    <select>
+                        <option value="마진 템플릿1">마진 템플릿1</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <label class="checkboxLabel">
+                        <input type="checkbox">
+                        수집 갯수 제한
+                    </label>
+                    <input type="text" placeholder="최대 갯수">
+                </div>
+
+                <div class="box">
+                    <label class="checkboxLabel">
+                        <input type="checkbox">
+                        가격 필터 사용
+                    </label>
+                    <input type="text" placeholder="최소 가격 (달러)" style="width: 100px;">
+                    ~
+                    <input type="text" placeholder="최소 가격 (달러)" style="width: 100px;">
+                </div>
+
+                <div class="box">
+                    배송비 설정
+                    <select>
+                        <option value="배송비 템플릿1">배송비 템플릿1</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    태그 설정
+                    <select>
+                        <option value="태그 템플릿1">태그 템플릿1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="tray">
+            <div class="count">검색건수&nbsp;&nbsp;0</div>
+            <div class="grid">
+                <table>
+                    <tr>
+                        <th style="width: 40px;">
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </th>
+                        <th style="width: 72px; text-align: center;">번호</th>
+                        <th>소싱 사이트</th>
+                        <th>수집명</th>
+                        <th style="text-align: center; width: 110px;">수집 현황</th>
+                        <th style="text-align: center; width: 120px;">등록일자</th>
+                        <th style="text-align: center; width: 100px;">수정</th>
+                        <th style="text-align: center; width: 100px;">삭제</th>
+                        <th style="text-align: center; width: 100px;">URL</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="amazon"></i>아마존</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="temu"></i>테무</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="ali"></i>알리 익스프레스</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="taobao"></i>타오바오</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn on">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="rakuten"></i>라쿠텐</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status">수집대기</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td><i class="evay"></i>이베이</td>
+                        <td>[소싱처][수집키워드][고유번호]</td>
+                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
+                        <td style="text-align: center;">2023.12.25 14:00</td>
+                        <td style="text-align: center;"><div class="btn">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="paging">
+                <div class="first"></div>
+                <div class="prev"></div>
+                <div class="num ac">1</div>
+                <div class="num">2</div>
+                <div class="next"></div>
+                <div class="last"></div>
+            </div>
+        </div>
+        <div class="btnWrap">
+            <div class="btn-blue">상품 등록 바로가기</div>
+            <div class="btn-excel">엑셀파일다운로드</div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    
+    <!-- SLICK -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $('.imgSlide').slick(
+            {
+                dots: true,
+                infinite: true,
+            }
+        );
+    </script>
+</body>
+</html>
