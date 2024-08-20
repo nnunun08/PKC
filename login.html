@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    
+
+    <div class="initialBody">
+        <div class="login">
+            <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+            <input type="email" placeholder="아이디(이메일)">
+            <input type="password" placeholder="비밀번호">
+            <label class="checkboxLabel"><input type="checkbox" checked>자동 로그인</label>
+            <div class="btnWrap" style="margin-top: 0;">
+                <div class="btn-black btn-full">로그인</div>
+            </div>
+            <div class="flex gap10" style="justify-content: center;">
+                ID/PW찾기
+                <div class="divider"></div>
+                회원가입
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        ID/PW찾기
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">ID/PW찾기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="ID-tab" data-bs-toggle="tab" data-bs-target="#ID-tab-pane" type="button" role="tab" aria-controls="ID-tab-pane" aria-selected="true">아이디찾기</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="PW-tab" data-bs-toggle="tab" data-bs-target="#PW-tab-pane" type="button" role="tab" aria-controls="PW-tab-pane" aria-selected="false">비밀번호찾기</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="ID-tab-pane" role="tabpanel" aria-labelledby="ID-tab" tabindex="0">
+                        <div class="formWrap">
+                            <input type="email" placeholder="이메일">
+                            <div class="flex gap4">
+                                <input type="password" placeholder="비밀번호">
+                                <div class="btn-blue">인증번호</div>
+                            </div>
+                            <div class="inputWrap green">
+                                <input type="text" placeholder="인증번호">
+                                <div class="mesg">인증번호가 일치합니다</div>
+                            </div>
+                            <div class="inputWrap red">
+                                <input type="password" placeholder="인증번호">
+                                <div class="mesg">비밀번호를 확인해주세요</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="PW-tab-pane" role="tabpanel" aria-labelledby="PW-tab" tabindex="0">
+                        <div class="formWrap">
+                            <input type="email" placeholder="이메일">
+                            <div class="flex gap4">
+                                <input type="password" placeholder="비밀번호">
+                                <div class="btn-blue">인증번호</div>
+                            </div>
+                            <div class="inputWrap green">
+                                <input type="text" placeholder="인증번호">
+                                <div class="mesg">인증번호가 일치합니다</div>
+                            </div>
+                            <div class="inputWrap red">
+                                <input type="password" placeholder="인증번호">
+                                <div class="mesg">비밀번호를 확인해주세요</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

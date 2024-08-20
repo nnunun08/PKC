@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- 퍼블리싱을 위한 include js -->
@@ -18,11 +19,11 @@
         <div class="menu">대시보드</div>
         <div class="group">상품관리</div>
         <div class="menu">상품 수집</div>
-        <div class="menu ac">수집 상품 검수</div>
+        <div class="menu">수집 상품 검수</div>
         <div class="menu">마켓 등록</div>
         <div class="group">금지 사항 관리</div>
         <div class="menu">금지어/금지브랜드 관리</div>
-        <div class="menu">치환어 관리</div>
+        <div class="menu ac">치환어 관리</div>
         <div class="menu">금지 코드 관리</div>
         <div class="group">설정</div>
         <div class="menu">마켓API 관리</div>
@@ -31,63 +32,59 @@
         <div class="group">기타</div>
         <div class="menu">상품코드 찾기</div>
     </div>
-    <div class="searchBar">
-        <div class="box">
-            <select>
-                <option value="수집명을 선택해주세요">수집명을 선택해주세요</option>
-            </select>
-        </div>
-        <div class="box">
-            등록일자
-            <input type="date">
-            ~
-            <input type="date">
-        </div>
-        <div class="box">
-            <input type="text" placeholder="상품명 입력" class="search">
-            <div class="btn-red">초기화</div>
-            <div class="btn-black">검색</div>
-            <label class="checkboxLabel"><input type="checkbox" checked>이미지 크게보기</label>
-        </div>
-    </div>
 
 
     <div class="contents">
-        <h1>수집 상품 검수</h1>
+        <h1>치환어 관리</h1>
 
-        <div class="sectionTit">
-            <label>수집명 : 아마존 양말 001</label>
-            <div class="accodionBtn">
-                접기
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 10L7 5L2 10" stroke="#808080"/>
-                </svg>
+        <div class="tray">
+            <div class="box col">
+                <div class="label">치환어 템플릿 선택</div>
+                <div class="flex">
+                    <select style="min-width: 160px;">
+                        <option value="치환 리스트 1">치환 리스트 1</option>
+                    </select>
+                    <div class="btn-blue">템플릿 추가</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tray">
+            <div class="flex gap20">
+                <div class="box">
+                    <input type="text" placeholder="치환어 검색" class="search" style="width: 280px;">
+                </div>
+                <div class="box">
+                    등록일자
+                    <input type="date">
+                    ~
+                    <input type="date">
+                    <div class="btn-skyblue">오늘</div>
+                    <div class="btn-skyblue">일주일</div>
+                    <div class="btn-skyblue">한달</div>
+                    <div class="btn-skyblue">두달</div>
+                </div>
+                <div class="box">
+                    <div class="btn-red">초기화</div>
+                    <div class="btn-black">검색</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tray">
+            <div class="box col">
+                <div class="label">치환어 추가</div>
+                <div class="flex gap4">
+                    <input type="text" placeholder="변경 전" style="width: 104px;">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L1 11" stroke="black"/>
+                    </svg>
+                    <input type="text" placeholder="변경 후" style="width: 104px;">
+                    <div class="btn-blue">추가</div>
+                </div>
             </div>
         </div>
         
-
-        <div class="filter">
-            <div class="flex flexWrap">
-                <div class="btn-blue">선택 상품 수집</div>
-                <div class="btn-blue">선택 일괄 검수</div>
-                <div class="btn-blue">선택 일괄 삭제</div>
-                <div class="btn-blue">선택 일괄 금지코드 설정</div>
-            </div>
-            <div class="flex flexWrap">
-                <div class="commandBtn">판매가 설정</div>
-                <div class="commandBtn">배송/교환비 설정</div>
-                <div class="commandBtn">태그 설정</div>
-                <div class="commandBtn">카테고리 설정</div>
-                <div class="commandBtn">금지단어 상품 삭제</div>
-                <div class="commandBtn">단어 치환</div>
-                <div class="commandBtn">상품명 길이 설정</div>
-                <div class="commandBtn">상품명 중복 단어 설정</div>
-                <div class="commandBtn">상품명 중복 단어 제거</div>
-                <div class="commandBtn">상품명 키워드 추가</div>
-                <div class="commandBtn">상품명 원상태로 복구</div>
-            </div>
-        </div>
-
         <div class="tray">
             <div class="count">검색건수&nbsp;&nbsp;150</div>
             <div class="grid">
@@ -174,13 +171,32 @@
             </div>
         </div>
         <div class="btnWrap">
-            <div class="btn-blue">상품 수집</div>
+            <div class="btn-black">수정 사항 저장</div>
+            <div class="btn-grey">수정 사항 초기화</div>
+            <div class="btn-blue">선택 치환어 삭제</div>
             <div class="btn-excel">엑셀파일다운로드</div>
         </div>
     </div>
 
 
 
+    
 
+
+    
+    <!-- SLICK -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $('.imgSlide').slick(
+            {
+                dots: true,
+                infinite: true,
+            }
+        );
+    </script>
+
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

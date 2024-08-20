@@ -17,6 +17,10 @@ body {
   padding-left: 240px;
   box-sizing: border-box;
 }
+body:has(.initialBody) {
+  padding: 0;
+  min-width: 1000px;
+}
 
 Select {
   font-family: inherit; /* 폰트 상속 */
@@ -51,6 +55,18 @@ input {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.gap4 {
+  gap: 4px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
 }
 
 .flexWrap {
@@ -200,6 +216,10 @@ h1 {
   letter-spacing: -0.26px;
   white-space: nowrap;
 }
+.box.col {
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 input,
 select {
@@ -274,6 +294,7 @@ select:active, select:focus-visible {
 [class*=Btn],
 [class*=btn-] {
   cursor: pointer;
+  margin: 0 2px;
 }
 
 .btn-blue {
@@ -386,6 +407,10 @@ select:active, select:focus-visible {
   background: url(/img/ic_excel.svg) center no-repeat;
 }
 
+.btn-full {
+  width: 100%;
+}
+
 label {
   display: flex;
   align-items: center;
@@ -479,6 +504,9 @@ label input[type=radio]:checked {
   flex-direction: column;
   gap: 20px;
 }
+.filter .flexWrap {
+  row-gap: 4px;
+}
 .filter .filterName {
   color: #484C51;
   font-family: Pretendard;
@@ -542,6 +570,15 @@ label input[type=radio]:checked {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.28px;
+}
+.tray .label {
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
 }
 
 .paging {
@@ -906,4 +943,124 @@ label input[type=radio]:checked {
   border-radius: 8px;
   background: #E0E2E7 url(/img/ic_remove.svg) center no-repeat;
   cursor: pointer;
+}
+
+.login {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 140px;
+  padding: 30px;
+  border-radius: 30px;
+  background: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.login .logo {
+  padding: 10px;
+}
+.login .logo img {
+  margin: 0 auto;
+  display: block;
+  height: 27px;
+}
+.login .btn-black {
+  border-radius: 8px;
+}
+.login .divider {
+  width: 1px;
+  height: 10px;
+  background: #D9D9D9;
+}
+
+.modal .modal-content {
+  border-radius: 30px;
+}
+.modal .modal-header {
+  border: 0;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.modal .modal-header .modal-title {
+  padding: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.modal .modal-body {
+  padding: 30px;
+  padding-top: 12px;
+  padding-bottom: 0;
+}
+.modal .nav-tabs {
+  border: 0;
+  gap: 0;
+  margin: 0;
+}
+.modal .nav-tabs .nav-item {
+  flex: 1 0 0;
+}
+.modal .nav-tabs .nav-link {
+  background-color: transparent;
+  width: 100%;
+  flex: 1 0 0;
+  border: 0;
+  border-bottom: 2px solid #EDEEF1;
+  text-align: center;
+  color: #838A93;
+}
+.modal .nav-tabs .nav-link.active {
+  color: #222;
+  border-color: #0E51DA;
+}
+.modal .formWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0;
+}
+.modal .inputWrap .mesg {
+  margin-top: 4px;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.modal .inputWrap.green input {
+  border: 1px solid #2BD397;
+}
+.modal .inputWrap.green .mesg {
+  color: #2BD397;
+}
+.modal .inputWrap.red input {
+  border: 1px solid #FF1C1C;
+}
+.modal .inputWrap.red .mesg {
+  color: #FF1C1C;
+}
+.modal input {
+  width: 100%;
+  flex: 1 0 0;
+  box-sizing: border-box;
+  padding: 10px 8px;
+}
+.modal .modal-footer {
+  margin: 0;
+  padding: 30px;
+  padding-top: 0;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */
