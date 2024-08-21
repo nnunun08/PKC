@@ -72,6 +72,9 @@ input {
 .gap4 {
 	gap: 4px;
 }
+.gap8 {
+	gap: 8px;
+}
 .gap10 {
 	gap: 10px;
 }
@@ -1051,6 +1054,99 @@ label {
 			}
 		}
 	}
+	.insertWrap {
+		display: flex;
+		margin-bottom: 20px;
+		flex-direction: column;
+		gap: 4px;
+		background-color: #EDEEF1;
+		padding: 10px 8px;
+		overflow: auto;
+		height: 90px;
+		border-radius: 8px;
+		color: #4B5262;
+		font-family: Pretendard;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.24px;
+		.name {
+			flex: 1 0 0;
+		}
+		.btn-skyblue {
+			height: 22px;
+			padding: 0 8px;
+			border-radius: 4px;
+		}
+	}
+	.planWrap {
+		display: flex;
+		gap: 12px;
+		padding-bottom: 30px;
+		.item {
+			flex: 1 0 0;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			color: #979CA3;
+			font-family: Pretendard;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.32px;
+			img {
+				width: 14px;
+				height: 14px;
+				background: url(../img/ic_plan_01.png) center/cover no-repeat;	
+			}
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				border-radius: 8px;
+				background: #EDEEF1;
+				padding: 10px 8px;
+				color: #4B5262;
+				font-family: Pretendard;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				letter-spacing: -0.24px;
+				min-height: 130px;
+				li {
+					padding-left: 18px;
+					position: relative;
+					&::before {
+						content: '';
+						width: 3px;
+						height: 3px;
+						position: absolute;
+						top: 5px;
+						left: 5px;
+						background-color: #4B5262;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+	.pWrap {
+		margin: 12px 0;
+		height: 340px;
+		overflow: auto;
+	}
+	p {
+		color: #4B5262;
+		font-family: Pretendard;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 150%; /* 19.5px */
+		letter-spacing: -0.26px;
+	}
 	.formWrap {
 		display: flex;
 		flex-direction: column;
@@ -1084,6 +1180,16 @@ label {
 			}
 		}
 	}
+	.inputLabel {
+		color: #979CA3;
+		font-family: Pretendard;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.26px;
+		margin-bottom: 4px;
+	}
 	input {
 		width: 100%;
 		flex: 1 0 0;
@@ -1095,5 +1201,64 @@ label {
 		padding: 30px;
 		padding-top: 0;
 		border: 0;
+	}
+
+}
+
+.signup {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 640px;
+	margin: 0 auto;
+	margin-top: 140px;
+	h2 {
+		color: #000;
+		font-family: Pretendard;
+		font-size: 21px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		letter-spacing: -0.42px;
+	}
+	.box {
+		color: #979CA3;
+		font-family: Pretendard;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.26px;
+		input:not([type="checkbox"]) {
+			width: 100%;
+		}
+		.span {
+			flex: 0 0 auto;
+			width: 140px;
+		}
+		.btn-blue {
+			width: 92px;
+			flex: 0 0 auto;
+		}
+		.checkboxLabel {
+			flex: 1 0 auto;
+		}
+		.link {
+			color: #222;
+			font-family: Pretendard;
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.26px;
+			text-decoration-line: underline;
+		}
+		
+	}
+	.btranWrap {
+		margin-top: 0;
+	}
+	[class*="btn-"] {
+		min-width: 120px;
 	}
 }

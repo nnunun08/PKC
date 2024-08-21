@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    
+
+    <div class="initialBody">
+        <div class="signup">
+            <h2>회원가입</h2>
+            <div class="tray">
+                <div class="box">
+                    <span class="span">이름</span>
+                    <input type="text" placeholder="이름">
+                </div>
+                <div class="box">
+                    <span class="span">ID(이메일 형식)</span>
+                    <input type="email" placeholder="ID(이메일 형식)">
+                </div>
+                <div class="box">
+                    <span class="span">휴대폰 번호</span>
+                    <input type="text" placeholder="연락처">
+                    <div class="btn-blue">인증번호 전송</div>
+                </div>
+                <div class="box">
+                    <span class="span">인증번호</span>
+                    <input type="text" placeholder="인증번호">
+                    <div class="btn-blue">확인</div>
+                </div>
+                <div class="box">
+                    <span class="span">비밀번호</span>
+                    <input type="text" placeholder="비밀번호(8자 이상 영문, 숫자, 특수문자 조합)">
+                </div>
+                <div class="box">
+                    <span class="span">비밀번호 확인</span>
+                    <input type="text" placeholder="비밀번호 확인">
+                </div>
+                <div class="box">
+                    <span class="span">약관 동의</span>
+                    <label class="checkboxLabel"><input type="checkbox" checked>[필수] 서비스 이용약관</label>
+                    <a class="link" data-bs-toggle="modal" data-bs-target="#detail">자세히 보기</a>
+                </div>
+            </div>
+
+            <div class="btnWrap">
+                <div class="btn-black">회원가입</div>
+                <div class="btn-grey">취소</div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="detailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="detailLabel">서비스 이용 약관</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="pWrap">
+                    <p>Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.<br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.</p>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

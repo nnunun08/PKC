@@ -61,6 +61,10 @@ input {
   gap: 4px;
 }
 
+.gap8 {
+  gap: 8px;
+}
+
 .gap10 {
   gap: 10px;
 }
@@ -1025,6 +1029,99 @@ label input[type=radio]:checked {
   color: #222;
   border-color: #0E51DA;
 }
+.modal .insertWrap {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #EDEEF1;
+  padding: 10px 8px;
+  overflow: auto;
+  height: 90px;
+  border-radius: 8px;
+  color: #4B5262;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+.modal .insertWrap .name {
+  flex: 1 0 0;
+}
+.modal .insertWrap .btn-skyblue {
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+.modal .planWrap {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 30px;
+}
+.modal .planWrap .item {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.modal .planWrap .item img {
+  width: 14px;
+  height: 14px;
+  background: url(../img/ic_plan_01.png) center/cover no-repeat;
+}
+.modal .planWrap .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  background: #EDEEF1;
+  padding: 10px 8px;
+  color: #4B5262;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  min-height: 130px;
+}
+.modal .planWrap .item ul li {
+  padding-left: 18px;
+  position: relative;
+}
+.modal .planWrap .item ul li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #4B5262;
+  border-radius: 50%;
+}
+.modal .pWrap {
+  margin: 12px 0;
+  height: 340px;
+  overflow: auto;
+}
+.modal p {
+  color: #4B5262;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: -0.26px;
+}
 .modal .formWrap {
   display: flex;
   flex-direction: column;
@@ -1052,6 +1149,16 @@ label input[type=radio]:checked {
 .modal .inputWrap.red .mesg {
   color: #FF1C1C;
 }
+.modal .inputLabel {
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+  margin-bottom: 4px;
+}
 .modal input {
   width: 100%;
   flex: 1 0 0;
@@ -1063,4 +1170,61 @@ label input[type=radio]:checked {
   padding: 30px;
   padding-top: 0;
   border: 0;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+.signup h2 {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+.signup .box {
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.signup .box input:not([type=checkbox]) {
+  width: 100%;
+}
+.signup .box .span {
+  flex: 0 0 auto;
+  width: 140px;
+}
+.signup .box .btn-blue {
+  width: 92px;
+  flex: 0 0 auto;
+}
+.signup .box .checkboxLabel {
+  flex: 1 0 auto;
+}
+.signup .box .link {
+  color: #222;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.26px;
+  text-decoration-line: underline;
+}
+.signup .btranWrap {
+  margin-top: 0;
+}
+.signup [class*=btn-] {
+  min-width: 120px;
 }/*# sourceMappingURL=style.css.map */

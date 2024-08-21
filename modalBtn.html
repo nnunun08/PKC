@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    
+    <div class="initialBody" style="margin: 0 auto; display: flex; gap: 4px; padding: 20px;">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal01">ID/PW찾기</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal02">서비스 이용 약관</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal03">상품 코드 찾기</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal04">결제 플랜 선택</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal05">태그 템플릿 추가</button>
+    </div>
+      
+    
+    <!-- ID/PW찾기 -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-labelledby="modal01" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal01">ID/PW찾기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="ID-tab" data-bs-toggle="tab" data-bs-target="#ID-tab-pane" type="button" role="tab" aria-controls="ID-tab-pane" aria-selected="true">아이디찾기</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="PW-tab" data-bs-toggle="tab" data-bs-target="#PW-tab-pane" type="button" role="tab" aria-controls="PW-tab-pane" aria-selected="false">비밀번호찾기</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="ID-tab-pane" role="tabpanel" aria-labelledby="ID-tab" tabindex="0">
+                        <div class="formWrap">
+                            <input type="email" placeholder="이메일">
+                            <div class="flex gap4">
+                                <input type="password" placeholder="비밀번호">
+                                <div class="btn-blue">인증번호</div>
+                            </div>
+                            <div class="inputWrap green">
+                                <input type="text" placeholder="인증번호">
+                                <div class="mesg">인증번호가 일치합니다</div>
+                            </div>
+                            <div class="inputWrap red">
+                                <input type="password" placeholder="인증번호">
+                                <div class="mesg">비밀번호를 확인해주세요</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="PW-tab-pane" role="tabpanel" aria-labelledby="PW-tab" tabindex="0">
+                        <div class="formWrap">
+                            <input type="email" placeholder="이메일">
+                            <div class="flex gap4">
+                                <input type="password" placeholder="비밀번호">
+                                <div class="btn-blue">인증번호</div>
+                            </div>
+                            <div class="inputWrap green">
+                                <input type="text" placeholder="인증번호">
+                                <div class="mesg">인증번호가 일치합니다</div>
+                            </div>
+                            <div class="inputWrap red">
+                                <input type="password" placeholder="인증번호">
+                                <div class="mesg">비밀번호를 확인해주세요</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 서비스 이용 약관 -->
+    <div class="modal fade" id="modal02" tabindex="-1" aria-labelledby="modal02Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal02Label">서비스 이용 약관</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="pWrap">
+                    <p>Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.<br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur. Mattis iaculis mattis dignissim habitant non purus in amet sit. Commodo in morbi ultrices odio ut ullamcorper laoreet. Vehicula praesent turpis quis elit metus odio gravida viverra. Faucibus proin in feugiat ac tellus vitae.</p>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품 코드 찾기 -->
+    <div class="modal fade" id="modal03" tabindex="-1" aria-labelledby="modal03Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal03Label">상품 코드 찾기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap" style="padding-bottom: 30px;">
+                    <div class="inputWrap red">
+                        <div class="inputLabel">상품 코드 검색</div>
+                        <input type="text" placeholder="상품 코드">
+                        <div class="mesg">일치하는 상품코드가 없습니다</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">이동</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 결제 플랜 선택 -->
+    <div class="modal fade" id="modal04" tabindex="-1" aria-labelledby="modal04Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 900px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal04Label">결제 플랜 선택</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="planWrap">
+                    <div class="item">
+                        <div class="flex gap8">
+                            <img src="./img/ic_plan_01.svg" alt="planicon">
+                        <div>플랜1</div></div>
+                        <ul>
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                            <li>특징 4</li>
+                        </ul>
+                        <div class="btnWrap">
+                            <button type="button" class="btn-black btn-full">플랜1 선택</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex gap8">
+                            <img src="./img/ic_plan_01.svg" alt="planicon">
+
+                        <div>플랜2</div></div>
+                        <ul>
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                            <li>특징 4</li>
+                        </ul>
+                        <div class="btnWrap">
+                            <button type="button" class="btn-black btn-full">플랜2 선택</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex gap8">
+                            <img src="./img/ic_plan_01.svg" alt="planicon">
+
+                        <div>플랜3</div></div>
+                        <ul>
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                            <li>특징 4</li>
+                        </ul>
+                        <div class="btnWrap">
+                            <button type="button" class="btn-black btn-full">플랜3 선택</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex gap8">
+                            <img src="./img/ic_plan_01.svg" alt="planicon">
+
+                        <div>플랜4</div></div>
+                        <ul>
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                            <li>특징 4</li>
+                        </ul>
+                        <div class="btnWrap">
+                            <button type="button" class="btn-black btn-full">플랜4 선택</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 태그 템플릿 추가 -->
+    <div class="modal fade" id="modal05" tabindex="-1" aria-labelledby="modal05Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal05Label">태그 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+
+                    <div class="inputWrap">
+                        <div class="inputLabel">태그 추가</div>
+                        <div class="flex">
+                            <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                            <div class="btn-blue">추가</div>
+                        </div>
+                    </div>
+
+                    <div class="insertWrap">
+                        <div class="flex">
+                            <div class="name">태그명1</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명2</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명3</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명4</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
