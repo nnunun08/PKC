@@ -354,6 +354,7 @@ select:active, select:focus-visible {
 }
 
 .btn-grey {
+  border: 0;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -793,6 +794,22 @@ label input[type=radio]:checked {
   position: relative;
   width: 100%;
 }
+.grid table .gridInput select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #FFF;
+  padding: 10px 16px;
+  padding-right: 28px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  box-sizing: border-box;
+}
 .grid table .gridInput input {
   width: 100%;
   border-radius: 10px;
@@ -1029,15 +1046,48 @@ label input[type=radio]:checked {
   color: #222;
   border-color: #0E51DA;
 }
+.modal label.grey {
+  width: 100px;
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.modal .box label {
+  color: #979CA3;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.modal .selectWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modal .selectWrap li {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+.modal .selectWrap label {
+  width: 100px;
+}
+.modal .selectWrap select {
+  flex: 1 0 0;
+}
 .modal .insertWrap {
   display: flex;
-  margin-bottom: 20px;
   flex-direction: column;
   gap: 4px;
   background-color: #EDEEF1;
   padding: 10px 8px;
   overflow: auto;
-  height: 90px;
   border-radius: 8px;
   color: #4B5262;
   font-family: Pretendard;
@@ -1058,7 +1108,6 @@ label input[type=radio]:checked {
 .modal .planWrap {
   display: flex;
   gap: 12px;
-  padding-bottom: 30px;
 }
 .modal .planWrap .item {
   flex: 1 0 0;
@@ -1122,11 +1171,26 @@ label input[type=radio]:checked {
   line-height: 150%; /* 19.5px */
   letter-spacing: -0.26px;
 }
+.modal .imgWrap {
+  padding-bottom: 12px;
+}
+.modal .imgWrap img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .modal .formWrap {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 12px 0;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.modal .inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .modal .inputWrap .mesg {
   margin-top: 4px;
@@ -1157,7 +1221,10 @@ label input[type=radio]:checked {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.26px;
-  margin-bottom: 4px;
+}
+.modal select {
+  width: 100%;
+  flex: 1 0 0;
 }
 .modal input {
   width: 100%;
@@ -1165,11 +1232,78 @@ label input[type=radio]:checked {
   box-sizing: border-box;
   padding: 10px 8px;
 }
+.modal input[type=radio],
+.modal input[type=checkbox] {
+  flex: 0 0 auto;
+}
 .modal .modal-footer {
   margin: 0;
   padding: 30px;
-  padding-top: 0;
+  padding-top: 20px;
   border: 0;
+}
+.modal .modal-footer.btnWrap {
+  gap: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.modal .dualSec {
+  display: flex;
+  gap: 12px;
+}
+.modal .dualSec .left {
+  flex: 0 0 430px;
+}
+.modal .dualSec .detail {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal .dualSec .arr {
+  padding-top: 20px;
+  width: 24px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+.modal .gridWrap {
+  padding: 10px 8px;
+  border-radius: 8px;
+  background: #EDEEF1;
+  overflow: auto;
+}
+.modal .gridWrap.line {
+  background-color: transparent;
+  border: 1px solid #ABAEB6;
+}
+.modal .gridWrap.line .grid tr {
+  background-color: transparent;
+}
+.modal .gridWrap.line .grid th, .modal .gridWrap.line .grid td {
+  height: 38px;
+  padding: 4px;
+}
+.modal .gridWrap .grid th, .modal .gridWrap .grid td {
+  height: 22px;
+  padding: 2px;
+}
+.modal .imgThumbWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .imgThumbWrap .imgWrap {
+  height: 86px;
+  box-sizing: content-box;
+  padding: 0;
+}
+.modal .imgThumbWrap .imgWrap .prev, .modal .imgThumbWrap .imgWrap .next {
+  width: 30px;
+  height: 100%;
+}
+.modal .imgThumbWrap .imgWrap .img {
+  width: 86px;
+  height: 86px;
 }
 
 .signup {

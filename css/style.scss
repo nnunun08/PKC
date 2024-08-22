@@ -354,6 +354,7 @@ select {
 }
 
 .btn-grey {
+	border: 0;
 	font-family: Pretendard;
 	font-size: 12px;
 	font-style: normal;
@@ -799,6 +800,22 @@ label {
 		.gridInput {
 			position: relative;
 			width: 100%;
+			select {
+				width: 100%;
+				border-radius: 10px;
+				border: 1px solid #000;
+				background-color: #FFF;
+				padding: 10px 16px;
+				padding-right: 28px;
+				color: #000;
+				font-family: Pretendard;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				letter-spacing: -0.24px;
+				box-sizing: border-box;
+			}
 			input {
 				width: 100%;
 				border-radius: 10px;
@@ -1054,15 +1071,52 @@ label {
 			}
 		}
 	}
+
+	label.grey {
+		width: 100px;
+		color: #979CA3;
+		font-family: Pretendard;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.26px;
+	}
+	.box label {
+		color: #979CA3;
+		font-family: Pretendard;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.26px;
+	}
+	.selectWrap {
+		// padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		li {
+			display: flex;
+			gap: 12px;
+			width: 100%;
+		}
+		label {
+			width: 100px;
+		}
+		select {
+			flex: 1 0 0;
+		}
+	}
 	.insertWrap {
 		display: flex;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		flex-direction: column;
 		gap: 4px;
 		background-color: #EDEEF1;
 		padding: 10px 8px;
 		overflow: auto;
-		height: 90px;
+		// height: 90px;
 		border-radius: 8px;
 		color: #4B5262;
 		font-family: Pretendard;
@@ -1083,7 +1137,7 @@ label {
 	.planWrap {
 		display: flex;
 		gap: 12px;
-		padding-bottom: 30px;
+		// padding-bottom: 30px;
 		.item {
 			flex: 1 0 0;
 			display: flex;
@@ -1147,13 +1201,25 @@ label {
 		line-height: 150%; /* 19.5px */
 		letter-spacing: -0.26px;
 	}
+	.imgWrap {
+		padding-bottom: 12px;
+		img {
+			width: 100%;
+			height: 180px;
+			object-fit: contain;
+		}
+	}
 	.formWrap {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
-		padding: 12px 0;
+		padding-top: 20px;
+		padding-bottom: 12px;
 	}
 	.inputWrap {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
 		.mesg {
 			margin-top: 4px;
 			font-family: Pretendard;
@@ -1182,13 +1248,18 @@ label {
 	}
 	.inputLabel {
 		color: #979CA3;
+		// color: #5A5E64;
 		font-family: Pretendard;
 		font-size: 13px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: -0.26px;
-		margin-bottom: 4px;
+		// margin-bottom: 4px;
+	}
+	select {
+		width: 100%;
+		flex: 1 0 0;
 	}
 	input {
 		width: 100%;
@@ -1196,15 +1267,85 @@ label {
 		box-sizing: border-box;
 		padding: 10px 8px;
 	}
+	input[type="radio"],
+	input[type="checkbox"] {
+		flex: 0 0 auto;
+	}
 	.modal-footer {
 		margin: 0;
 		padding: 30px;
-		padding-top: 0;
+		padding-top: 20px;
 		border: 0;
+		&.btnWrap {
+			gap: 12px;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+	}
+	.dualSec {
+		display: flex;
+		gap: 12px;
+		.left {
+			flex: 0 0 430px;
+		}
+		.detail {
+			flex: 1 0 0;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+		.arr {
+			padding-top: 20px;
+			width: 24px;
+			flex: 0 0 auto;
+			text-align: center;
+		}
+	}
+	.gridWrap {
+		padding: 10px 8px;
+		border-radius: 8px;
+		background: #EDEEF1;
+		overflow: auto;
+		&.line {
+			background-color: transparent;
+			border: 1px solid #ABAEB6;
+			.grid {
+				tr {
+					background-color: transparent;
+				}
+				th, td {
+					height: 38px;
+					padding: 4px;
+				}
+			}
+		}
+		.grid {
+			th,td {
+				height: 22px;
+				padding: 2px;
+			}
+		}
 	}
 
+	.imgThumbWrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.imgWrap {
+			height: 86px;
+			box-sizing: content-box;
+			padding: 0;
+			.prev, .next {
+				width: 30px;
+				height: 100%;
+			}
+			.img {
+				width: 86px;
+				height: 86px;
+			}
+		}
+	}
 }
-
 .signup {
 	display: flex;
 	flex-direction: column;

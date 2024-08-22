@@ -14,12 +14,26 @@
 </head>
 <body>
     
-    <div class="initialBody" style="margin: 0 auto; display: flex; gap: 4px; padding: 20px;">
+    <div class="initialBody" style="margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4px; padding: 20px;">
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal01">ID/PW찾기</button>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal02">서비스 이용 약관</button>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal03">상품 코드 찾기</button>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal04">결제 플랜 선택</button>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal05">태그 템플릿 추가</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal06">카테고리 설정</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal07">상품 수집 수정</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal08">엑셀 파일 업로드</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal09">배송 템플릿 추가</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal10">이미지 미리보기</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal11">판매가 설정</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal12">배송/교환비 설정</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal13">태그 설정</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal14">상품명 키워드 추가</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal15">지정 단어 치환</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal16">상품명 길이 일괄 변경</button>
+
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal17">상품 마켓 등록</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal18">[상품명]상세정보</button>
     </div>
       
     
@@ -122,7 +136,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="formWrap" style="padding-bottom: 30px;">
+                <div class="formWrap">
                     <div class="inputWrap red">
                         <div class="inputLabel">상품 코드 검색</div>
                         <input type="text" placeholder="상품 코드">
@@ -145,7 +159,7 @@
             <h1 class="modal-title" id="modal04Label">결제 플랜 선택</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="padding-bottom: 30px;">
                 <div class="planWrap">
                     <div class="item">
                         <div class="flex gap8">
@@ -261,6 +275,730 @@
         </div>
         </div>
     </div>
+
+    <!-- 카테고리 설정 -->
+    <div class="modal fade" id="modal06" tabindex="-1" aria-labelledby="modal06Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal06Label">카테고리 설정</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">카테고리 검색</div>
+                        <div class="flex">
+                            <input type="text" placeholder="검색키워드 입력">
+                            <div class="btn-blue">검색</div>
+                        </div>
+                    </div>
+                    <ul class="box selectWrap">
+                        <li>
+                            <label>스마트스토어</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>쿠팡</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>11번가</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>옥션</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>G마켓</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">수집 시작</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품 수집 수정 -->
+    <div class="modal fade" id="modal07" tabindex="-1" aria-labelledby="modal07Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal07Label">상품 수집 수정</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">소싱 사이트</div>
+                            <select style="width: 100%;">
+                                <option value="아마존">아마존</option>
+                            </select>
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">수집키워드</div>
+                            <input type="text" placeholder="수집키워드">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">수정하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 엑셀 파일 업로드 -->
+    <div class="modal fade" id="modal08" tabindex="-1" aria-labelledby="modal08Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal08Label">엑셀 파일 업로드</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap4">
+                        <input type="text" placeholder="파일명">
+                        <label class="btn-blue">
+                            파일선택
+                            <input type="file" style="display: none;">
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">파일 업로드</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+     <!-- 배송 템플릿 추가 -->
+     <div class="modal fade" id="modal09" tabindex="-1" aria-labelledby="modal09Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal09Label">배송 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">배송 기본 정보</div>
+                        <div class="flex gap10">
+                            <label class="grey">배송비 입력</label>
+                            <input type="text">
+                        </div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">배송비 상품 가격에 포함 및 무료 배송 설정</label>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">배송 옵션</div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">쿠팡 반품배송비 (편도) 최대금액 자동 설정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">마켓 배송비 정책 위배 시 자동 조정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">쿠팡 반품배송비 (편도) 최대금액 자동 설정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">소싱 사이트 배송비 상품가격에 포함</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">추가 배송비 적용</label>
+                        <div class="flex gap10">
+                            <div class="inputWrap" style="flex: 1 0 0;">
+                                <div class="inputLabel">도서 산간 추가 배송비</div>
+                                <input type="text" placeholder="추가 배송비">
+                            </div>
+                            <div class="inputWrap" style="flex: 1 0 0;">
+                                <div class="inputLabel">제주 추가 배송비</div>
+                                <input type="text" placeholder="추가 배송비">
+                            </div>
+                        </div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">일정 금액 이상 구매 시 무료 배송</label>
+                        <div class="flex gap4">
+                            <label class="checkboxLabel"><input type="checkbox" checked=""></label>
+                            <input type="text" style="width: 124px;">
+                            <div class="inputLabel">원 이상 구매 시 무료 배송</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+                <button type="button" class="btn-grey btn-full">기존 템플릿에서 복제하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 이미지 미리보기 -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal10Label">이미지 미리보기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="imgWrap">
+                    <img src="https://c.pxhere.com/photos/1c/22/clouds_sky_sky_clouds_blue_sky_clouds_blue_nature_weather_light-694199.jpg!d" alt="img">
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 판매가 설정 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal11Label">판매가 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <div class="flex gap10">
+                            <label class="grey">마진 템플릿 선택</label>
+                            <select>
+                                <option value="마진 템플릿 1">마진 템플릿 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">판매가 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배송/교환비 설정 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal12Label">배송/교환비 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <ul class="box selectWrap">
+                            <li>
+                                <label>배송비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>교환비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>반품비 입력</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">배송비 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 태그 설정 -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modal13Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal13Label">태그 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <div class="flex gap10">
+                            <label class="grey">태그 템플릿 선택</label>
+                            <select>
+                                <option value="태그 템플릿 1">태그 템플릿 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">태그 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 상품명 키워드 추가 -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modal14Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal14Label">상품명 키워드 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">맨 앞 키워드 추가</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">맨 뒤 키워드 추가</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 지정 단어 치환 -->
+    <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modal15Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal15Label">지정 단어 치환</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <label><input type="radio" name="name1" checked="">치환어 템플릿 선택</label>
+                    <select>
+                        <option value="치환 템플릿 1">치환 템플릿 1</option>
+                    </select>
+                    <label style="margin-top: 10px;"><input type="radio" name="name1">직접 입력하여 치환</label>
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">변경 전 단어</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">변경 후 단어</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                    </div>
+                    <div class="flex gap10">
+                        <label class="checkboxLabel"><input type="checkbox" checked="">상품명</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">옵션</label>
+                        <label class="checkboxLabel"><input type="checkbox">상세페이지</label>
+                        <label class="checkboxLabel"><input type="checkbox">상품 정보</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품명 길이 일괄 변경 -->
+    <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modal16Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal16Label">배송 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">스마트스토어</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name2" checked="">글자</label>
+                            <label><input type="radio" name="name2">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">쿠팡</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name3" checked="">글자</label>
+                            <label><input type="radio" name="name3">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">11번가</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name4" checked="">글자</label>
+                            <label><input type="radio" name="name4">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">옥션</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name5" checked="">글자</label>
+                            <label><input type="radio" name="name5">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">G마켓</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name6" checked="">글자</label>
+                            <label><input type="radio" name="name6">바이트</label>
+                        </div>
+                    </div>
+
+                    <label class="checkboxLabel"><input type="checkbox" checked="">마지막 단어 미완성 단어일 시 삭제</label>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">변경하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- 상품 마켓 등록 -->
+    <div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="modal17Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 1080px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal17Label">상품 마켓 등록</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="dualSec">
+                        <div class="left">
+                            <div class="inputWrap">
+                                <div class="inputLabel">등록 현황</div>
+                                <div class="graphWrap" style="width: 100%; height: 280px; background-color: #EDEEF1; border-radius: 8px;">
+                                    <!-- 그래프 영역 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <!--  -->
+                            <div class="inputWrap">
+                                <div class="inputLabel">마켓 선택</div>
+                                <div class="flex gap4">
+                                    <input type="text" placeholder="마켓 이름을 검색해 주세요">
+                                    <div class="btn-blue">검색</div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="flex gap4">
+                                <div class="inputWrap">
+                                    <div class="inputLabel">마켓 목록</div>
+                                    <div class="gridWrap" style="height: 146px;">
+                                        <div class="grid">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th style="width: 30px; text-align: center;">번호</th>
+                                                        <th style="text-align: center;">마켓</th>
+                                                        <th style="text-align: center;">마켓이름</th>
+                                                        <th></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                        <td style="text-align: center;"><div class="btn on">추가하기</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                        <td style="text-align: center;"><div class="btn on">추가하기</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                        <td style="text-align: center;"><div class="btn on">추가하기</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                        <td style="text-align: center;"><div class="btn on">추가하기</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                        <td style="text-align: center;"><div class="btn on">추가하기</div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arr">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path d="M1 0.5L7 7L1 13.5" stroke="black"/>
+                                    </svg>
+                                </div>
+                                <div class="inputWrap">
+                                    <div class="inputLabel">마켓 목록</div>
+                                    <div class="gridWrap" style="height: 146px;">
+                                        <div class="grid">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th style="width: 30px; text-align: center;">번호</th>
+                                                        <th style="text-align: center;">마켓</th>
+                                                        <th style="text-align: center;">마켓이름</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">##</td>
+                                                        <td style="text-align: center;">스마트스토어</td>
+                                                        <td style="text-align: center;">네이버-A</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="inputWrap">
+                                <div class="inputLabel">등록 상품 정보</div>
+                                <div class="gridWrap" style="height: 146px;">
+                                    <div class="grid">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th style="width: 30px; text-align: center;">번호</th>
+                                                    <th style="text-align: center;">상품명</th>
+                                                    <th style="text-align: center;">판매가</th>
+                                                    <th style="text-align: center;">수집일</th>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">##</td>
+                                                    <td style="text-align: center;">상품명상품명상품명상품명상품명상품명</td>
+                                                    <td style="text-align: center;">##,###</td>
+                                                    <td style="text-align: center;">YYYY.MM.DD HH:mm</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dualSec">
+                        <div class="left">
+                            <div class="inputWrap">
+                                <div class="inputLabel">마켓 등록 템플릿</div>
+                                <select>
+                                    <option value="등록 템플릿1">등록 템플릿1</option>
+                                </select>
+                            </div>  
+                            <div class="inputWrap" style="margin-top: 12px;">
+                                <div class="inputLabel">마켓 등록 템플릿</div>
+                                <div class="flex gao10">
+                                    <label class="checkboxLabel"><input type="checkbox" checked="">상품 코드 중복 검사</label>
+                                    <label class="checkboxLabel"><input type="checkbox" checked="">상품명 중복 검사</label>
+                                    <label class="checkboxLabel"><input type="checkbox" checked="">중복 상품 삭제 후 재등록</label>
+                                </div>
+                                <div class="flex gap10">
+                                    <label class="grey">동시 등록 마켓수</label>
+                                    <select>
+                                        <option value="10개 마켓 동시 등록">10개 마켓 동시 등록</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="detail">
+                            <div class="inputWrap">
+                                <div class="inputLabel">등록 상태</div>
+                                <div class="gridWrap" style="height: 146px;">
+                                    <div class="grid">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th style="text-align: center;">작업일시</th>
+                                                    <th style="text-align: center;">작업내용</th>
+                                                    <th style="text-align: center;">등록마켓</th>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">YYYY.MM.DD HH:mm</td>
+                                                    <td style="text-align: center;">상품명상품명상품명상품명상품명상품명</td>
+                                                    <td style="text-align: center;">네이버 - A</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">등록시작</button>
+                <button type="button" class="btn-grey btn-full">일시정지</button>
+                <button type="button" class="btn-black btn-full">등록종료</button>
+                <button type="button" class="btn-grey btn-full">닫기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- [상품명]상세정보 -->
+    <div class="modal fade" id="modal18" tabindex="-1" aria-labelledby="modal18Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 980px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal18Label">[상품명]상세정보</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">상품정보</div>
+                        <div class="gridWrap line">
+                            <div class="grid">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>태그</th>
+                                            <th>등록마켓</th>
+                                            <th>소싱 사이트</th>
+                                            <th>글자수</th>
+                                            <th>수집명</th>
+                                            <th>상품명</th>
+                                            <th>카테고리</th>
+                                            <th>상품현황</th>
+                                        </tr>
+                                        <tr>
+                                            <td>태그</td>
+                                            <td>
+                                                <div class="gridInput">
+                                                    <select>
+                                                        <option value="value">value</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>알리 익스프레스</td>
+                                            <td>49</td>
+                                            <td>아마존 원피스 001</td>
+                                            <td>
+                                                <div class="gridInput">
+                                                    <input type="text" value="상품명상품명상품명상품명상품명">
+                                                </div>
+                                            </td>
+                                            <td>카테고리</td>
+                                            <td>
+                                                <div class="gridInput">
+                                                    <select>
+                                                        <option value="등록완료">등록완료</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputWrap">
+                        <div class="inputLabel">가격정보</div>
+                        <div>
+                            <select style="flex: 0 0 auto; width: auto;">
+                                <option value="마진템플릿">마진템플릿</option>
+                            </select>
+                        </div>
+                        <div class="gridWrap line">
+                            <div class="grid">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>원가</th>
+                                            <th>관세</th>
+                                            <th>판매가</th>
+                                            <th>중간마진</th>
+                                            <th>배송비</th>
+                                            <th>마켓수수료</th>
+                                            <th>최종마진</th>
+                                        </tr>
+                                        <tr>
+                                            <td>12,500</td>
+                                            <td>0</td>
+                                            <td>25,000</td>
+                                            <td>8,500</td>
+                                            <td>0</td>
+                                            <td>수집 중</td>
+                                            <td>8,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputWrap">
+                        <div class="inputLabel">이미지</div>
+                        <div class="grid">
+                            <table>
+                                <tr style="background-color: transparent;">
+                                    <td>
+                                        <div class="imgThumbWrap">
+                                            <div class="imgWrap">
+                                                <div class="prev"></div>
+                                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                                <div class="img"></div>
+                                                <div class="img"></div>
+                                                <div class="next"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">이동</button>
+                <button type="button" class="btn-grey btn-full">편집하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     
 
 <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
