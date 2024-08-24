@@ -21,6 +21,9 @@ body:has(.initialBody) {
   padding: 0;
   min-width: 1000px;
 }
+body:has(.dashboard) {
+  min-width: 768px;
+}
 
 Select {
   font-family: inherit; /* 폰트 상속 */
@@ -1417,16 +1420,17 @@ label input[type=radio]:checked {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-around;
   margin-top: -20px;
+  padding: 0 10%;
 }
 .dashboard .timeWrap .time {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  flex: 1 0 40px;
+  max-width: 120px;
   height: 80px;
   color: #4B5262;
   text-align: center;
@@ -1524,12 +1528,20 @@ label input[type=radio]:checked {
   transform: rotate(45deg);
   background: #000;
 }
+.dashboard .tray {
+  margin: 0;
+}
 .dashboard .conWrap {
   flex: 1 0 0;
   align-self: stretch;
+  max-width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .dashboard .nav-tabs {
   border: 0;
+  margin: 0;
 }
 .dashboard .nav-tabs .nav-item {
   display: flex;
@@ -1607,6 +1619,17 @@ label input[type=radio]:checked {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.26px;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard .conWrap {
+    max-width: 100%;
+  }
+  .dashboard .conWrap.left .tray {
+    flex: 1 0 0;
+  }
 }
 
 .graphSelect .box {
