@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    <div data-include-path="header.html"></div> 
+    <!-- <div data-include-path="lnb.html"></div>  -->
+    <div class="lnb">
+        <div class="menu ac">대시보드</div>
+        <div class="group">상품관리</div>
+        <div class="menu">상품 수집</div>
+        <div class="menu">수집 상품 검수</div>
+        <div class="menu">마켓 등록</div>
+        <div class="group">금지 사항 관리</div>
+        <div class="menu">금지어/금지브랜드 관리</div>
+        <div class="menu">치환어 관리</div>
+        <div class="menu">금지 코드 관리</div>
+        <div class="group">설정</div>
+        <div class="menu">마켓API 관리</div>
+        <div class="menu">템플릿 관리</div>
+        <div class="menu">기타 설정</div>
+        <div class="group">기타</div>
+        <div class="menu">상품코드 찾기</div>
+    </div>
+
+
+    <div class="contents">
+        <h1>대시보드</h1>
+
+        <div class="dashboard flex gap20">
+            <div class="conWrap">
+                <div class="tray">
+                    <div class="flex gap16">
+                        <div class="iconTray">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="9" fill="#F0CD14"/>
+                                <path d="M11.5 8V13.5H16" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="titWrap">
+                            <h2>대시보드</h2>
+                            <div class="planName">
+                                <img src="./img/ic_plan_01.png" alt="planicon">
+                                베이직 플랜 이용중 (~2024.12.12)
+                            </div>
+                        </div>
+                        <div class="btn-skyblue gap4">
+                            연장하기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+                                <path d="M1 1L5 5L1 9" stroke="#3779FF" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeWrap">
+                        <div class="time">
+                            20
+                            <div class="absol">일</div>
+                        </div>
+                        <div class="divider">:</div>
+                        <div class="time">
+                            12
+                            <div class="absol">시간</div>
+                        </div>
+                        <div class="divider">:</div>
+                        <div class="time">
+                            01
+                            <div class="absol">분</div>
+                        </div>
+                        <div class="divider">:</div>
+                        <div class="time">
+                            12
+                            <div class="absol">초</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tray">
+                    <div class="flex gap16">
+                        <div class="iconTray">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="3" fill="#45C587"/>
+                                <path d="M11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6C12.2652 6 12.5196 6.10536 12.7071 6.29289C12.8946 6.48043 13 6.73478 13 7V17C13 17.2652 12.8946 17.5196 12.7071 17.7071C12.5196 17.8946 12.2652 18 12 18C11.7348 18 11.4804 17.8946 11.2929 17.7071C11.1054 17.5196 11 17.2652 11 17V7C11 6.73478 11.1054 6.48043 11.2929 6.29289Z" fill="white"/>
+                                <path d="M6.29289 12.2929C6.48043 12.1054 6.73478 12 7 12C7.26522 12 7.51957 12.1054 7.70711 12.2929C7.89464 12.4804 8 12.7348 8 13V17C8 17.2652 7.89464 17.5196 7.70711 17.7071C7.51957 17.8946 7.26522 18 7 18C6.73478 18 6.48043 17.8946 6.29289 17.7071C6.10536 17.5196 6 17.2652 6 17V13C6 12.7348 6.10536 12.4804 6.29289 12.2929Z" fill="white"/>
+                                <path d="M16.2929 10.2929C16.4804 10.1054 16.7348 10 17 10C17.2652 10 17.5196 10.1054 17.7071 10.2929C17.8946 10.4804 18 10.7348 18 11V17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18C16.7348 18 16.4804 17.8946 16.2929 17.7071C16.1054 17.5196 16 17.2652 16 17V11C16 10.7348 16.1054 10.4804 16.2929 10.2929Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="titWrap">
+                            <h2>등록현황</h2>
+                        </div>
+                    </div>
+                    <div class="barWrap">
+                        <div class="flex barCompo">
+                            <div class="date">어제</div>
+                            <div class="barBox yellow">
+                                <div class="bar" style="width: 10%;">
+                                    <div class="barCount">28건</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex barCompo">
+                            <div class="date">어제</div>
+                            <div class="barBox green">
+                                <div class="bar" style="width: 20%;">
+                                    <div class="barCount">52건</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex barCompo">
+                            <div class="date">어제</div>
+                            <div class="barBox blue">
+                                <div class="bar" style="width: 100%;">
+                                    <div class="barCount">987건</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conWrap">
+                <ul class="nav nav-tabs" id="dashTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="notice-tab" data-bs-toggle="tab" data-bs-target="#notice-tab-pane" type="button" role="tab" aria-controls="notice-tab-pane" aria-selected="true">공지사항</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tip-tab" data-bs-toggle="tab" data-bs-target="#tip-tab-pane" type="button" role="tab" aria-controls="tip-tab-pane" aria-selected="false">TIP</button>
+                    </li>
+                </ul>
+                <div class="tray" style="margin-top: 10px; height: 324px; overflow: auto;">
+                    <div class="tab-content" id="dashTabContent">
+                        <div class="tab-pane fade show active" id="notice-tab-pane" role="tabpanel" aria-labelledby="notice-tab" tabindex="0">
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                            <div class="list">
+                                <div class="badge">공지</div>
+                                <div class="text">새로운 공지사항입니다. 확인해 주세요.</div>
+                                <div class="date">2024.12.12</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tip-tab-pane" role="tabpanel" aria-labelledby="tip-tab" tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tray">
+            <div class="graphSelect">
+                <div class="box">
+                    유입현황
+                    <select>
+                        <option value="일별 추이">일별 추이</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="graphArea">
+                <!-- grph -->
+            </div>
+        </div>
+        <div class="btnWrap">
+            <div class="btn-blue">상품 등록 바로가기</div>
+            <div class="btn-excel">엑셀파일다운로드</div>
+        </div>
+    </div>
+
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
