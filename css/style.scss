@@ -707,6 +707,7 @@ label {
 }
 
 .grid {
+	overflow: auto;
 	table {
 		width: 100%;
 		table-layout: fixed;
@@ -745,6 +746,8 @@ label {
 			letter-spacing: -0.26px;
 			text-align: left;
 			box-sizing: border-box;
+			text-overflow: ellipsis;
+    		overflow: hidden;
 		}
 		.checkboxLabel {
 			justify-content: center;

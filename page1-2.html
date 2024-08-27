@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+    <div data-include-path="header.html"></div> 
+    <!-- <div data-include-path="lnb.html"></div>  -->
+    <div class="lnb">
+        <div class="menu">대시보드</div>
+        <div class="group">상품관리</div>
+        <div class="menu">상품 수집</div>
+        <div class="menu ac">수집 상품 검수</div>
+        <div class="menu">마켓 등록</div>
+        <div class="group">금지 사항 관리</div>
+        <div class="menu">금지어/금지브랜드 관리</div>
+        <div class="menu">치환어 관리</div>
+        <div class="menu">금지 코드 관리</div>
+        <div class="group">설정</div>
+        <div class="menu">마켓API 관리</div>
+        <div class="menu">템플릿 관리</div>
+        <div class="menu">기타 설정</div>
+        <div class="group">기타</div>
+        <div class="menu">상품코드 찾기</div>
+    </div>
+    <div class="searchBar">
+        <div class="box">
+            소싱사이트 선택
+            <select>
+                <option value="아마존">아마존</option>
+                <option value="알리 익스프레스">알리 익스프레스</option>
+                <option value="테무">테무</option>
+                <option value="이베이">이베이</option>
+                <option value="라쿠텐">라쿠텐</option>
+                <option value="타오바오">타오바오</option>
+            </select>
+        </div>
+        <div class="box">
+            수집키워드 입력
+            <input type="text">
+            <div class="btn-blue">추가</div>
+            <div class="btn-skyblue">링크열기</div>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="검색어 입력" class="search">
+            <div class="btn-black">검색</div>
+            <label><input type="radio" name="name1" checked>URL 입력</label>
+            <label><input type="radio" name="name1">검색어 입력</label>
+        </div>
+    </div>
+
+
+    <div class="contents">
+        <h1>수집 상품 검수</h1>
+
+
+        <div class="filter">
+            <div class="flex flexWrap">
+                <div class="btn-blue">전체 검수</div>
+                <div class="btn-blue">선택 일괄 검수</div>
+                <div class="btn-blue">선택 일괄 삭제</div>
+                <div class="btn-blue">선택 일괄 금지코드 설정</div>
+            </div>
+            <div class="flex flexWrap">
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal11">판매가 설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal12">배송/교환비 설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal13">태그 설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal06">카테고리 설정</div>
+                <div class="commandBtn">금지단어 상품 삭제</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal15">단어 치환</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal16">상품명 길이 설정</div>
+                <div class="commandBtn">상품명 중복 단어 설정</div>
+                <div class="commandBtn">상품명 중복 단어 제거</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal14">상품명 키워드 추가</div>
+                <div class="commandBtn">상품명 원상태로 복구</div>
+            </div>
+        </div>
+
+
+        <div class="tray">
+            <div class="count">검색건수&nbsp;&nbsp;150</div>
+            <div class="grid">
+                <!-- 컬럼 수가 많은 경우는 테이블 최소 크기를 별도로 지정 : min-width 활용 -->
+                <table style="min-width: 1440px;">
+                    <tr>
+                        <th style="width: 40px;">
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </th>
+                        <th style="text-align: center; width: 72px; ">번호</th>
+                        <th style="text-align: center; width: 220px; ">이미지</th>
+                        <th>태그</th>
+                        <th>글자수</th>
+                        <th style="width: 260px;">상품명</th>
+                        <th>카테고리</th>
+                        <th>원가</th>
+                        <th>관세</th>
+                        <th>판매가</th>
+                        <th>중간 마진</th>
+                        <th>배송비</th>
+                        <th>마켓수수료</th>
+                        <th>최종마진</th>
+                        <th style="text-align: center; width: 100px;">삭제</th>
+                        <th style="text-align: center; width: 100px;">URL</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td style="text-align: center; width: 220px; ">
+                            <div class="imgWrap">
+                                <div class="prev"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="next"></div>
+                            </div>
+                        </td>
+                        <td>태그</td>
+                        <td>49</td>
+                        <td>MT-001</td>
+                        <td>카테고리</td>
+                        <td>12,500</td>
+                        <td>0</td>
+                        <td>21,000</td>
+                        <td>8,500</td>
+                        <td>0</td>
+                        <td>수집중</td>
+                        <td>6,000</td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td style="text-align: center; width: 220px; ">
+                            <div class="imgWrap">
+                                <div class="prev"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img ac"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="next"></div>
+                            </div>
+                        </td>
+                        <td>태그</td>
+                        <td>49</td>
+                        <td>
+                            <div class="gridInput">
+                                <input type="text" value="[소싱처][수집키워드][고유번호]">
+                                <div class="inputBtn">수정</div>
+                            </div>
+                        </td>
+                        <td>카테고리</td>
+                        <td>12,500</td>
+                        <td>0</td>
+                        <td>21,000</td>
+                        <td>8,500</td>
+                        <td>0</td>
+                        <td>수집중</td>
+                        <td>6,000</td>
+                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="paging">
+                <div class="first"></div>
+                <div class="prev"></div>
+                <div class="num ac">1</div>
+                <div class="num">2</div>
+                <div class="next"></div>
+                <div class="last"></div>
+            </div>
+        </div>
+        <div class="btnWrap">
+            <div class="btn-blue">상품 수집</div>
+            <div class="btn-excel">엑셀파일다운로드</div>
+        </div>
+    </div>
+
+
+    <!-- 카테고리 설정 -->
+    <div class="modal fade" id="modal06" tabindex="-1" aria-labelledby="modal06Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal06Label">카테고리 설정</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">카테고리 검색</div>
+                        <div class="flex">
+                            <input type="text" placeholder="검색키워드 입력">
+                            <div class="btn-blue">검색</div>
+                        </div>
+                    </div>
+                    <ul class="box selectWrap">
+                        <li>
+                            <label>스마트스토어</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>쿠팡</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>11번가</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>옥션</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>G마켓</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">수집 시작</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 판매가 설정 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal11Label">판매가 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <div class="flex gap10">
+                            <label class="grey">마진 템플릿 선택</label>
+                            <select>
+                                <option value="마진 템플릿 1">마진 템플릿 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">판매가 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배송/교환비 설정 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal12Label">배송/교환비 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <ul class="box selectWrap">
+                            <li>
+                                <label>배송비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>교환비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>반품비 입력</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">배송비 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 태그 설정 -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modal13Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal13Label">태그 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <div class="flex gap10">
+                            <label class="grey">태그 템플릿 선택</label>
+                            <select>
+                                <option value="태그 템플릿 1">태그 템플릿 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">태그 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 지정 단어 치환 -->
+    <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modal15Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal15Label">지정 단어 치환</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <label><input type="radio" name="name1" checked="">치환어 템플릿 선택</label>
+                    <select>
+                        <option value="치환 템플릿 1">치환 템플릿 1</option>
+                    </select>
+                    <label style="margin-top: 10px;"><input type="radio" name="name1">직접 입력하여 치환</label>
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">변경 전 단어</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">변경 후 단어</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                    </div>
+                    <div class="flex gap10">
+                        <label class="checkboxLabel"><input type="checkbox" checked="">상품명</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">옵션</label>
+                        <label class="checkboxLabel"><input type="checkbox">상세페이지</label>
+                        <label class="checkboxLabel"><input type="checkbox">상품 정보</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품명 길이 일괄 변경 -->
+    <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modal16Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal16Label">배송 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">스마트스토어</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name2" checked="">글자</label>
+                            <label><input type="radio" name="name2">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">쿠팡</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name3" checked="">글자</label>
+                            <label><input type="radio" name="name3">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">11번가</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name4" checked="">글자</label>
+                            <label><input type="radio" name="name4">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">옥션</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name5" checked="">글자</label>
+                            <label><input type="radio" name="name5">바이트</label>
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">G마켓</div>
+                        <div class="flex gap10">
+                            <input type="text">
+                            <label><input type="radio" name="name6" checked="">글자</label>
+                            <label><input type="radio" name="name6">바이트</label>
+                        </div>
+                    </div>
+
+                    <label class="checkboxLabel"><input type="checkbox" checked="">마지막 단어 미완성 단어일 시 삭제</label>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">변경하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품명 키워드 추가 -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modal14Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal14Label">상품명 키워드 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">맨 앞 키워드 추가</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">맨 뒤 키워드 추가</div>
+                            <input type="text" placeholder="단어를 입력해 주세요">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- 퍼블리싱을 위한 include js -->
@@ -65,7 +66,7 @@
             <div class="top">
                 <div class="filterName">수집옵션</div>
                 <div class="flex">
-                    <div class="commandBtn">선택 상품 수집</div>
+                    <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal06">선택 상품 수집</div>
                     <div class="commandBtn">선택 상품 수집</div>
                     <div class="commandBtn">선택 상품 수집</div>
                 </div>
@@ -193,7 +194,7 @@
                         <td>[소싱처][수집키워드][고유번호]</td>
                         <td style="text-align: center;"><span class="status ing">수집 중</span></td>
                         <td style="text-align: center;">2023.12.25 14:00</td>
-                        <td style="text-align: center;"><div class="btn on">수정하기</div></td>
+                        <td style="text-align: center;"><div class="btn on" data-bs-toggle="modal" data-bs-target="#modal07">수정하기</div></td>
                         <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
                         <td style="text-align: center;"><div class="btn on">링크열기</div></td>
                     </tr>
@@ -240,7 +241,97 @@
         </div>
     </div>
 
+    <!-- 카테고리 설정 -->
+    <div class="modal fade" id="modal06" tabindex="-1" aria-labelledby="modal06Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal06Label">카테고리 설정</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">카테고리 검색</div>
+                        <div class="flex">
+                            <input type="text" placeholder="검색키워드 입력">
+                            <div class="btn-blue">검색</div>
+                        </div>
+                    </div>
+                    <ul class="box selectWrap">
+                        <li>
+                            <label>스마트스토어</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>쿠팡</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>11번가</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>옥션</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>G마켓</label>
+                            <select>
+                                <option value="카테고리 경로">카테고리 경로</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">수집 시작</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 상품 수집 수정 -->
+    <div class="modal fade" id="modal07" tabindex="-1" aria-labelledby="modal07Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal07Label">상품 수집 수정</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap10">
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">소싱 사이트</div>
+                            <select style="width: 100%;">
+                                <option value="아마존">아마존</option>
+                            </select>
+                        </div>
+                        <div class="inputWrap" style="flex: 1 0 0;">
+                            <div class="inputLabel">수집키워드</div>
+                            <input type="text" placeholder="수집키워드">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">수정하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
 
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
