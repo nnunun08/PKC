@@ -13,7 +13,59 @@
 
 </head>
 <body>
-    <div data-include-path="header.html"></div> 
+    <!-- <div data-include-path="header.html"></div>  -->
+    <div class="gnb flex">
+        <div class="logo">
+            <img src="/img/logo.png" alt="img">
+        </div>
+        <div class="right flex">
+            <div class="nick">닉네임</div>
+            <div class="bell">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#4B5262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#4B5262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="logout btn">로그아웃</div>
+            <div class="mobileMenu" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-controls="mobileMenuOffcanvas">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="5" width="16" height="2" fill="#4B5262"/>
+                    <rect x="4" y="11" width="16" height="2" fill="#4B5262"/>
+                    <rect x="4" y="17" width="16" height="2" fill="#4B5262"/>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="mobileMenuPanel offcanvas offcanvas-end" tabindex="-1" id="mobileMenuOffcanvas" aria-labelledby="mobileMenuOffcanvasLabel">
+            <div type="button" class="closeBtn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 10L10 26M10 10L26 26" stroke="black"/>
+                </svg>
+            </div>
+            <div class="offcanvas-body">
+                <div class="nickname">닉네임</div>
+                <div class="lnb">
+                    <div class="menu ac">대시보드</div>
+                    <div class="group">상품관리</div>
+                    <div class="menu">상품 수집</div>
+                    <div class="menu">수집 상품 검수</div>
+                    <div class="menu">마켓 등록</div>
+                    <div class="group">금지 사항 관리</div>
+                    <div class="menu">금지어/금지브랜드 관리</div>
+                    <div class="menu">치환어 관리</div>
+                    <div class="menu">금지 코드 관리</div>
+                    <div class="group">설정</div>
+                    <div class="menu">마켓API 관리</div>
+                    <div class="menu">템플릿 관리</div>
+                    <div class="menu">기타 설정</div>
+                    <div class="group">기타</div>
+                    <div class="menu">상품코드 찾기</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <div data-include-path="lnb.html"></div>  -->
     <div class="lnb">
         <div class="menu ac">대시보드</div>

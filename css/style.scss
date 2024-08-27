@@ -26,6 +26,9 @@ body {
 	&:has(.dashboard) {
 		min-width: 768px;
 	}
+	@media screen and (max-width:768px) {
+		padding-left: 0;
+	}
 
 }
 
@@ -152,6 +155,61 @@ h1 {
 	.btn {
 		background: #0C41AC;
 	}
+	.mobileMenu {
+		display: none;
+	}
+	@media screen and (max-width:768px) {
+		.nick,
+		.bell,
+		.logout {
+			display: none;
+		}
+		.mobileMenu {
+			display: block;
+		}
+	}
+	@media screen and (min-width:769px) {
+		.mobileMenuPanel,
+		.offcanvas-backdrop {
+			display: none;
+		}
+	}
+}
+
+.mobileMenuPanel {
+	text-align: left;
+	padding-top: 29px;
+	max-width: 80vw;
+	.offcanvas-body {
+		padding: 0;
+	}
+	.nickname {
+		padding: 0 20px;
+		margin-bottom: 20px;
+		color: #4B5262;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.28px;
+	}
+	.closeBtn {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.lnb {
+		display: block;
+		position: static;
+		height: calc(100% - 37px);
+		overflow: auto;
+		border: 0;
+		width: 100%;
+		.menu {
+			width: 100%;
+		}
+	}
 }
 
 
@@ -209,6 +267,10 @@ h1 {
 			border-bottom: 1px solid #86A8EE;
 			background: #0E51DA;
 		}
+	}
+
+	@media screen and (max-width:768px) {
+		display: none;
 	}
 }
 

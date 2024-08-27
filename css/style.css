@@ -24,6 +24,11 @@ body:has(.initialBody) {
 body:has(.dashboard) {
   min-width: 768px;
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+}
 
 Select {
   font-family: inherit; /* 폰트 상속 */
@@ -145,6 +150,61 @@ h1 {
 .gnb .btn {
   background: #0C41AC;
 }
+.gnb .mobileMenu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .gnb .nick,
+  .gnb .bell,
+  .gnb .logout {
+    display: none;
+  }
+  .gnb .mobileMenu {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .gnb .mobileMenuPanel,
+  .gnb .offcanvas-backdrop {
+    display: none;
+  }
+}
+
+.mobileMenuPanel {
+  text-align: left;
+  padding-top: 29px;
+  max-width: 80vw;
+}
+.mobileMenuPanel .offcanvas-body {
+  padding: 0;
+}
+.mobileMenuPanel .nickname {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: #4B5262;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.mobileMenuPanel .closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.mobileMenuPanel .lnb {
+  display: block;
+  position: static;
+  height: calc(100% - 37px);
+  overflow: auto;
+  border: 0;
+  width: 100%;
+}
+.mobileMenuPanel .lnb .menu {
+  width: 100%;
+}
 
 .lnb {
   z-index: 10;
@@ -201,6 +261,11 @@ h1 {
   border-top: 1px solid #86A8EE;
   border-bottom: 1px solid #86A8EE;
   background: #0E51DA;
+}
+@media screen and (max-width: 768px) {
+  .lnb {
+    display: none;
+  }
 }
 
 .searchBar {
