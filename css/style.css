@@ -517,6 +517,7 @@ label input[type=radio]:checked {
   align-items: center;
   gap: 4px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .btnWrap [class*=btn] {
   height: 38px;
@@ -955,6 +956,9 @@ label input[type=radio]:checked {
   border: 1px solid #B1B1B1;
   background: #FFF;
 }
+.sectionTit .accodionBtn.close svg {
+  transform: rotate(180deg);
+}
 
 .nav-tabs {
   border-bottom-color: #7F7F8D;
@@ -1320,6 +1324,7 @@ label input[type=radio]:checked {
   border: 0;
 }
 .modal .modal-footer.btnWrap {
+  margin-bottom: 0;
   gap: 12px;
   display: flex;
   flex-wrap: nowrap;

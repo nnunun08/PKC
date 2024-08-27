@@ -513,6 +513,7 @@ label {
 	align-items: center;
 	gap: 4px;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	[class*="btn"] {
 		height: 38px;
 		border-radius: 8px;
@@ -958,6 +959,11 @@ label {
 		border-radius: 10px;
 		border: 1px solid #B1B1B1;
 		background: #FFF;
+		&.close {
+			svg {
+				transform: rotate(180deg);
+			}
+		}
 	}
 }
 
@@ -1349,6 +1355,7 @@ label {
 		padding-top: 20px;
 		border: 0;
 		&.btnWrap {
+			margin-bottom: 0;
 			gap: 12px;
 			display: flex;
 			flex-wrap: nowrap;
