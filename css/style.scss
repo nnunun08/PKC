@@ -203,7 +203,6 @@ h1 {
 		display: block;
 		position: static;
 		height: calc(100% - 37px);
-		overflow: auto;
 		border: 0;
 		width: 100%;
 		.menu {
@@ -214,6 +213,7 @@ h1 {
 
 
 .lnb {
+	overflow: auto;
 	z-index: 10;
 	position: fixed;
 	top: $gnbHeight;
@@ -633,6 +633,7 @@ label {
 
 .tray {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 16px;
 	background: #F9FAFB;
 	padding: 20px;
@@ -756,7 +757,7 @@ label {
 		}
 		.btn {
 			margin: 0 auto;
-			color: #A5ABB2;
+			border: 0;
 			font-family: Pretendard;
 			font-size: 12px;
 			font-style: normal;
@@ -768,10 +769,11 @@ label {
 			display: inline-flex;
 			width: auto;
 			border-radius: 4px;
-			background: #D2D7DE;
+			color: #A5ABB2 !important;
+			background: #D2D7DE !important;
 			&.on {
-				background: #D0DFFF;
-				color: #3779FF;
+				background: #D0DFFF !important;
+				color: #3779FF !important;
 			}
 		}
 		.status {
@@ -903,6 +905,7 @@ label {
 				line-height: normal;
 				letter-spacing: -0.24px;
 				box-sizing: border-box;
+				padding-right: 46px;
 			}
 			.inputBtn {
 				position: absolute;

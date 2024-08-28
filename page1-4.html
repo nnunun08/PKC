@@ -20,8 +20,8 @@
         <div class="group">상품관리</div>
         <div class="menu">상품 수집</div>
         <div class="menu">수집 상품 검수</div>
-        <div class="menu ac">마켓 등록</div>
-        <div class="menu">등록 상품 관리</div>
+        <div class="menu">마켓 등록</div>
+        <div class="menu ac">등록 상품 관리</div>
         <div class="menu">전체 상품 내역</div>
         <div class="group">금지 사항 관리</div>
         <div class="menu">금지어/금지브랜드 관리</div>
@@ -35,64 +35,85 @@
         <div class="menu">상품코드 찾기</div>
     </div>
 
-    <div class="searchBar">
-        <div class="box">
-            수집명 입력
-            <input type="text" placeholder="상품명 입력" class="search">
-            <!-- <select>
-                <option value="수집명을 선택해주세요">수집명을 선택해주세요</option>
-            </select> -->
-        </div>
-        <div class="box">
-            등록일자
-            <input type="date">
-            ~
-            <input type="date">
-        </div>
-        <div class="box">
-            소싱 사이트별 조회
-            <select>
-                <option value="알리 익스프레스">알리 익스프레스</option>
-            </select>
-            <div class="btn-black">검색</div>
-        </div>
-
-    </div>
-
-
     <div class="contents">
-        <h1>마켓 등록</h1>
+        <h1>등록 상품 관리</h1>
 
-        <div class="sectionTit">
-            <label>수집명 : 아마존 양말 001</label>
-            <div class="accodionBtn">
-                접기
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 10L7 5L2 10" stroke="#808080"></path>
-                </svg>
+        <!-- <div class="tray">
+            <div class="box col">
+                <div class="label">치환어 템플릿 선택</div>
+                <div class="flex">
+                    <select style="min-width: 160px;">
+                        <option value="치환 리스트 1">치환 리스트 1</option>
+                    </select>
+                    <div class="btn-blue">템플릿 추가</div>
+                </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="filter">
-            <div class="flex flexWrap">
-                <div class="btn-blue">선택 상품 미검수 상태로 변경</div>
-                <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal17">선택 상품 마켓 등록</div>
-                <div class="btn-blue">선택 상품 삭제</div>
-                <div class="btn-blue">선택 일괄 금지코드 설정</div>
-                
-            </div>
-            <div class="flex flexWrap">
-                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal11">판매가 재설정</div>
-                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal12">배송/교환비 재설정</div>
-                <div class="commandBtn">업로드 마켓 변경</div>
-                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal13">태그 재설정</div>
-                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal06">카테고리 설정</div>
-                <div class="commandBtn">상품 정보 편집</div>
+        <div class="tray">
+            <div class="box">
+                검색어 입력
+                <input type="text" placeholder="수집명 또는 상품명을 입력해주세요" class="search" style="width: 260px;">
                 <label class="checkboxLabel"><input type="checkbox" checked="">이미지 크게보기</label>
             </div>
+            <div class="box">
+                등록 마켓
+                <div class="toggleBtnBox">
+                    <label class="toggleBtn"><input type="radio" name="tab" checked=""><span>전체</span></label>
+                    <label class="toggleBtn"><input type="radio" name="tab"><span>스마트스토어</span></label>
+                    <label class="toggleBtn"><input type="radio" name="tab"><span>G마켓</span></label>
+                    <label class="toggleBtn"><input type="radio" name="tab"><span>쿠팡</span></label>
+                    <label class="toggleBtn"><input type="radio" name="tab"><span>11번가</span></label>
+                </div>
+            </div>
+            <div class="box">
+                등록일자
+                <input type="date">
+                ~
+                <input type="date">
+                <div class="btn-skyblue">오늘</div>
+                <div class="btn-skyblue">일주일</div>
+                <div class="btn-skyblue">한달</div>
+                <div class="btn-skyblue">두달</div>
+            </div>
+            <div class="box">
+                고객 유입량
+                <input type="text" placeholder="숫자 입력" style="width:100px;">
+                번
+                <label>이상<input type="radio" name="name1" checked=""></label>
+                <label>이하<input type="radio" name="name1"></label>
+            </div>
+            <div class="flex gap20">
+                <div class="box" style="flex: 1 0 0;">
+                    태그 검색
+                    <input type="text" placeholder="태그를 입력해 주세요" class="search" style="width: 280px;">
+                </div>
+                <div class="box">
+                    <div class="btn-red">초기화</div>
+                    <div class="btn-black">검색</div>
+                </div>
+            </div>
         </div>
 
+        <div class="filter" style="flex-direction: row; justify-content: space-between;">
+            <div class="flex flexWrap">
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal11">판매가 재설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal12">배송비 재설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal06">카테고리 재설정</div>
+                <div class="commandBtn" data-bs-toggle="modal" data-bs-target="#modal13">태그 재설정</div>
+            </div>
 
+            <div class="flex flexWrap">
+                <div class="btn-blue">전체 상품 잠금</div>
+                <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal17">선택 상품 마켓 등록</div>
+                <div class="btn-blue">선택 상품 잠금</div>
+                <div class="btn-blue">선택 상품 잠금해제</div>
+                <div class="btn-blue">선택 상품 삭제</div>
+                
+            </div>
+            
+        </div>
+        
         <div class="tray">
             <div class="count">검색건수&nbsp;&nbsp;150</div>
             <div class="grid">
@@ -103,18 +124,17 @@
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </th>
                         <th style="text-align: center; width: 72px; ">번호</th>
+                        <th style="text-align: center; width: 100px;">잠금</th>
+                        <th style="width: 200px;">메모</th>
+                        <th style="width: 200px;">상품명</th>
+                        <th>스마트스토어</th>
+                        <th>쿠팡</th>
+                        <th>11번가</th>
+                        <th>옥션</th>
+                        <th>G마켓</th>
                         <th>태그</th>
-                        <th>글자수</th>
-                        <th style="width: 260px;">상품명</th>
                         <th>카테고리</th>
-                        <th>원가</th>
-                        <th>관세</th>
-                        <th>판매가</th>
-                        <th>중간 마진</th>
-                        <th>배송비</th>
-                        <th>마켓수수료</th>
-                        <th>최종마진</th>
-                        <th style="text-align: center; width: 100px;">금지코드 등록</th>
+                        <th style="width: 110px;">등록일자</th>
                         <th style="text-align: center; width: 100px;">삭제</th>
                         <th style="text-align: center; width: 100px;">URL</th>
                     </tr>
@@ -123,19 +143,67 @@
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </td>
                         <td style="text-align: center;">##</td>
-                        <td>태그</td>
-                        <td>49</td>
+                        <td style="text-align: center;"><div class="btn on">잠그기</div></td>
+                        <td>
+                            전체
+                            <i class="plus"></i>
+                        </td>
                         <td>MT-001</td>
-                        <td>카테고리</td>
-                        <td>12,500</td>
-                        <td>0</td>
-                        <td>21,000</td>
-                        <td>8,500</td>
-                        <td>0</td>
-                        <td>수집중</td>
-                        <td>6,000</td>
-                        <td style="text-align: center;"><div class="btn on">금지코드</div></td>
-                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>[태그]</td>
+                        <td>[카테고리]</td>
+                        <td>2023.01.24 14:00</td>
+                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td style="text-align: center;"><div class="lock"></div></td>
+                        <td>
+                            전체
+                            <i class="plus"></i>
+                        </td>
+                        <td>MT-001</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>[태그]</td>
+                        <td>[카테고리]</td>
+                        <td>2023.01.24 14:00</td>
+                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
+                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="checkboxLabel"><input type="checkbox"></label>
+                        </td>
+                        <td style="text-align: center;">##</td>
+                        <td style="text-align: center;"><div class="lock"></div></td>
+                        <td>
+                            <div class="gridInput">
+                                <input type="text" value="기존 메모 내용">
+                                <div class="inputBtn">수정</div>
+                            </div>
+                        </td>
+                        <td>MT-001</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>154</td>
+                        <td>[태그]</td>
+                        <td>[카테고리]</td>
+                        <td>2023.01.24 14:00</td>
+                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
                         <td style="text-align: center;"><div class="btn on">링크열기</div></td>
                     </tr>
                 </table>
@@ -150,94 +218,71 @@
             </div>
         </div>
         <div class="btnWrap">
-            <div class="btn-blue">상품 검수</div>
+            <!-- <div class="btn-black">수정 사항 저장</div>
+            <div class="btn-grey">수정 사항 초기화</div> -->
+            <div class="btn-blue">상품 추가</div>
             <div class="btn-excel">엑셀파일다운로드</div>
         </div>
-
-
-        <div class="sectionTit">
-            <label>수집명 : 아마존 원피스 001</label>
-            <div class="accodionBtn close">
-                열기
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 10L7 5L2 10" stroke="#808080"></path>
-                </svg>
-            </div>
-        </div>
-
-        <div class="sectionTit">
-            <label>수집명 : 아마존 원피스 002</label>
-            <div class="accodionBtn">
-                접기
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 10L7 5L2 10" stroke="#808080"></path>
-                </svg>
-            </div>
-        </div>
-
-        <div class="tray">
-            <div class="count">검색건수&nbsp;&nbsp;150</div>
-            <div class="grid">
-                <!-- 컬럼 수가 많은 경우는 테이블 최소 크기를 별도로 지정 : min-width 활용 -->
-                <table style="min-width: 1440px;">
-                    <tr>
-                        <th style="width: 40px;">
-                            <label class="checkboxLabel"><input type="checkbox"></label>
-                        </th>
-                        <th style="text-align: center; width: 72px; ">번호</th>
-                        <th>태그</th>
-                        <th>글자수</th>
-                        <th style="width: 260px;">상품명</th>
-                        <th>카테고리</th>
-                        <th>원가</th>
-                        <th>관세</th>
-                        <th>판매가</th>
-                        <th>중간 마진</th>
-                        <th>배송비</th>
-                        <th>마켓수수료</th>
-                        <th>최종마진</th>
-                        <th style="text-align: center; width: 100px;">금지코드 등록</th>
-                        <th style="text-align: center; width: 100px;">삭제</th>
-                        <th style="text-align: center; width: 100px;">URL</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="checkboxLabel"><input type="checkbox"></label>
-                        </td>
-                        <td style="text-align: center;">##</td>
-                        <td>태그</td>
-                        <td>49</td>
-                        <td>MT-001</td>
-                        <td>카테고리</td>
-                        <td>12,500</td>
-                        <td>0</td>
-                        <td>21,000</td>
-                        <td>8,500</td>
-                        <td>0</td>
-                        <td>수집중</td>
-                        <td>6,000</td>
-                        <td style="text-align: center;"><div class="btn on">금지코드</div></td>
-                        <td style="text-align: center;"><div class="btn on">삭제하기</div></td>
-                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="paging">
-                <div class="first"></div>
-                <div class="prev"></div>
-                <div class="num ac">1</div>
-                <div class="num">2</div>
-                <div class="next"></div>
-                <div class="last"></div>
-            </div>
-        </div>
-        <div class="btnWrap">
-            <div class="btn-blue">상품 검수</div>
-            <div class="btn-excel">엑셀파일다운로드</div>
-        </div>
-
     </div>
 
+
+    <!-- 판매가 설정 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal11Label">판매가 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <div class="flex gap10">
+                            <label class="grey">마진 템플릿 선택</label>
+                            <select>
+                                <option value="마진 템플릿 1">마진 템플릿 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">판매가 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배송/교환비 설정 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="modal12Label">배송/교환비 설정</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="formWrap">
+                        <ul class="box selectWrap">
+                            <li>
+                                <label>배송비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>교환비 입력</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>반품비 입력</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer btnWrap">
+                    <button type="button" class="btn-black btn-full">배송비 변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 카테고리 설정 -->
     <div class="modal fade" id="modal06" tabindex="-1" aria-labelledby="modal06Label" aria-hidden="true">
@@ -295,64 +340,6 @@
                 <button type="button" class="btn-black btn-full">수집 시작</button>
             </div>
         </div>
-        </div>
-    </div>
-
-    <!-- 판매가 설정 -->
-    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title" id="modal11Label">판매가 설정</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="formWrap">
-                        <div class="flex gap10">
-                            <label class="grey">마진 템플릿 선택</label>
-                            <select>
-                                <option value="마진 템플릿 1">마진 템플릿 1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer btnWrap">
-                    <button type="button" class="btn-black btn-full">판매가 변경</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 배송/교환비 설정 -->
-    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title" id="modal12Label">배송/교환비 설정</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="formWrap">
-                        <ul class="box selectWrap">
-                            <li>
-                                <label>배송비 입력</label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label>교환비 입력</label>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <label>반품비 입력</label>
-                                <input type="text">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer btnWrap">
-                    <button type="button" class="btn-black btn-full">배송비 변경</button>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -464,7 +451,7 @@
                                     </svg>
                                 </div>
                                 <div class="inputWrap">
-                                    <div class="inputLabel">등록 마켓 목록</div>
+                                    <div class="inputLabel">마켓 목록</div>
                                     <div class="gridWrap" style="height: 146px;">
                                         <div class="grid">
                                             <table>
@@ -520,7 +507,7 @@
                                 </select>
                             </div>  
                             <div class="inputWrap" style="margin-top: 12px;">
-                                <div class="inputLabel">등록 옵션</div>
+                                <div class="inputLabel">마켓 등록 템플릿</div>
                                 <div class="flex gao10">
                                     <label class="checkboxLabel"><input type="checkbox" checked="">상품 코드 중복 검사</label>
                                     <label class="checkboxLabel"><input type="checkbox" checked="">상품명 중복 검사</label>
@@ -570,6 +557,6 @@
         </div>
     </div>
 
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
