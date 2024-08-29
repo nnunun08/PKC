@@ -69,7 +69,7 @@
                         <select>
                             <option value="스마트스토어(미국)">스마트스토어(미국)</option>
                         </select>
-                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal09">마켓추가</div>
+                        <div class="btn-blue">마켓추가</div>
                         <div class="toggleUI">
                             Off
                             <label class="toggle">
@@ -300,6 +300,30 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <th>번역 툴 설정</th>
+                                <td>
+                                    <div class="conWrap">
+                                        <div class="box">
+                                            <label><input type="radio" name="name2" checked></label>
+                                            <select>
+                                                <option value="구글 번역">구글 번역</option>
+                                            </select>
+                                            <input type="text" value="API키">
+                                            <div class="remove"></div>
+                                        </div>
+                                        <div class="box">
+                                            <label><input type="radio" name="name2"></label>
+                                            <select>
+                                                <option value="구글 번역">구글 번역</option>
+                                            </select>
+                                            <input type="text" value="API키">
+                                            <div class="remove"></div>
+                                        </div>
+                                        <div class="btn-blue">추가</div>
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                     <div class="btnWrap">
@@ -326,29 +350,6 @@
             </div>
           </div>
         
-    </div>
-
-    <!-- API 추가 -->
-    <div class="modal fade" id="modal09" tabindex="-1" aria-labelledby="modal09Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title" id="modal09Label">API 추가</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="formWrap">
-                    <div class="inputWrap">
-                        <div class="inputLabel">API 이름</div>
-                        <input type="text" placeholder="API 이름을 입력해 주세요">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer btnWrap">
-                <button type="button" class="btn-black btn-full">추가하기</button>
-            </div>
-        </div>
-        </div>
     </div>
 
 <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -310,6 +310,7 @@ select {
 	background: #EDEEF1;
 	display: flex;
 	padding: 10px 16px;
+	padding: 10px;
 	align-items: center;
 	color: #000;
 	font-family: Pretendard;
@@ -382,7 +383,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
@@ -398,7 +399,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
@@ -414,7 +415,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 40px;
@@ -432,7 +433,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
@@ -449,7 +450,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 40px;
@@ -465,7 +466,7 @@ select {
 	letter-spacing: -0.24px;
 	display: flex;
 	height: 32px;
-	padding: 0px 14px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
@@ -511,7 +512,7 @@ label {
 .btnWrap {
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	gap: 2px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	[class*="btn"] {
@@ -713,7 +714,7 @@ label {
 	table {
 		width: 100%;
 		table-layout: fixed;
-		tr:hover {
+		tr:has(td):hover {
 			background-color: #E9EDF4;
 		}
 		th {
@@ -881,6 +882,7 @@ label {
 				border: 1px solid #000;
 				background-color: #FFF;
 				padding: 10px 16px;
+				padding: 10px;
 				padding-right: 28px;
 				color: #000;
 				font-family: Pretendard;
@@ -897,6 +899,7 @@ label {
 				border: 1px solid #000;
 				background: #FFF;
 				padding: 10px 16px;
+				padding: 10px;
 				color: #000;
 				font-family: Pretendard;
 				font-size: 12px;
@@ -1038,6 +1041,16 @@ label {
 	td {
 		background: #F9FAFB;
 		padding: 10px 20px;
+		.value {
+			margin-top: 3px;
+			color: #000;
+			font-family: Pretendard;
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.24px;
+		}
 	}
 
 	.box {

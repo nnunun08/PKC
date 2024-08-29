@@ -305,6 +305,7 @@ select {
   background: #EDEEF1;
   display: flex;
   padding: 10px 16px;
+  padding: 10px;
   align-items: center;
   color: #000;
   font-family: Pretendard;
@@ -383,7 +384,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -400,7 +401,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -417,7 +418,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
@@ -435,7 +436,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -452,7 +453,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
@@ -469,7 +470,7 @@ select:active, select:focus-visible {
   letter-spacing: -0.24px;
   display: flex;
   height: 32px;
-  padding: 0px 14px;
+  padding: 0px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -515,7 +516,7 @@ label input[type=radio]:checked {
 .btnWrap {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -715,7 +716,7 @@ label input[type=radio]:checked {
   width: 100%;
   table-layout: fixed;
 }
-.grid table tr:hover {
+.grid table tr:has(td):hover {
   background-color: #E9EDF4;
 }
 .grid table th {
@@ -880,6 +881,7 @@ label input[type=radio]:checked {
   border: 1px solid #000;
   background-color: #FFF;
   padding: 10px 16px;
+  padding: 10px;
   padding-right: 28px;
   color: #000;
   font-family: Pretendard;
@@ -896,6 +898,7 @@ label input[type=radio]:checked {
   border: 1px solid #000;
   background: #FFF;
   padding: 10px 16px;
+  padding: 10px;
   color: #000;
   font-family: Pretendard;
   font-size: 12px;
@@ -1026,6 +1029,16 @@ label input[type=radio]:checked {
 .table td {
   background: #F9FAFB;
   padding: 10px 20px;
+}
+.table td .value {
+  margin-top: 3px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
 }
 .table .box label {
   color: #979CA3;

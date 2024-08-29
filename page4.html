@@ -52,11 +52,25 @@
         </div>
 
         <div class="tray">
+            <div class="box col">
+                <div class="label">치환어 추가</div>
+                <div class="flex gap4">
+                    <input type="text" placeholder="변경 전" style="width: 104px;">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L1 11" stroke="black"/>
+                    </svg>
+                    <input type="text" placeholder="변경 후" style="width: 104px;">
+                    <div class="btn-blue">추가</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tray">
             <div class="flex gap20">
                 <div class="box">
                     <input type="text" placeholder="치환어 검색" class="search" style="width: 280px;">
                 </div>
-                <div class="box">
+                <div class="box" style="flex: 1 0 0;">
                     등록일자
                     <input type="date">
                     ~
@@ -72,20 +86,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="tray">
-            <div class="box col">
-                <div class="label">치환어 추가</div>
-                <div class="flex gap4">
-                    <input type="text" placeholder="변경 전" style="width: 104px;">
-                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L6 6L1 11" stroke="black"/>
-                    </svg>
-                    <input type="text" placeholder="변경 후" style="width: 104px;">
-                    <div class="btn-blue">추가</div>
-                </div>
-            </div>
-        </div>
         
         <div class="tray">
             <div class="count">검색건수&nbsp;&nbsp;150</div>
@@ -95,71 +95,21 @@
                         <th style="width: 40px;">
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </th>
-                        <th style="text-align: center; width: 72px; ">번호</th>
-                        <th style="text-align: center; width: 220px; ">이미지</th>
-                        <th>수집명</th>
-                        <th style="text-align: center; width: 110px;">수집 현황</th>
-                        <th style="width: 120px;">메모</th>
-                        <th style="text-align: center; width: 100px;">잠금</th>
-                        <th style="text-align: center; width: 100px;">삭제</th>
-                        <th style="text-align: center; width: 100px;">URL</th>
+                        <th style="text-align: center; width: 72px;">번호</th>
+                        <th style="text-align: center;">치환전</th>
+                        <th style="text-align: center;">치환후</th>
+                        <th style="text-align: center;">등록일자</th>
+                        <th style="text-align: center;"></th>
                     </tr>
                     <tr>
-                        <td>
+                        <td style="text-align: center;">
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </td>
                         <td style="text-align: center;">##</td>
-                        <td style="text-align: center; width: 220px; ">
-                            <div class="imgWrap">
-                                <div class="prev"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img ac"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="next"></div>
-                            </div>
-                        </td>
-                        <td>[소싱처][수집키워드][고유번호]</td>
-                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
-                        <td>
-                            전체
-                            <i class="plus"></i>
-                        </td>
-                        <td style="text-align: center;"><div class="btn on">잠그기</div></td>
-                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
-                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="checkboxLabel"><input type="checkbox"></label>
-                        </td>
-                        <td style="text-align: center;">##</td>
-                        <td style="text-align: center; width: 220px; ">
-                            <div class="imgWrap">
-                                <div class="prev"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
-                                <div class="img"></div>
-                                <div class="img"></div>
-                                <div class="next"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="gridInput">
-                                <input type="text" value="[소싱처][수집키워드][고유번호]">
-                                <div class="inputBtn">수정</div>
-                            </div>
-                        </td>
-                        <td style="text-align: center;"><span class="status ing">수집 중</span></td>
-                        <td>
-                            전체
-                            <i class="plus"></i>
-                        </td>
-                        <td style="text-align: center;"><div class="lock"></div></td>
-                        <td style="text-align: center;"><div class="btn">삭제하기</div></td>
-                        <td style="text-align: center;"><div class="btn on">링크열기</div></td>
+                        <td style="text-align: center;">변경 전 단어</td>
+                        <td style="text-align: center;">변경 전 단어</td>
+                        <td style="text-align: center;">2024.10.21 14:00</td>
+                        <td style="text-align: center;"><div class="btn">삭제</div></td>
                     </tr>
                 </table>
             </div>
@@ -173,10 +123,10 @@
             </div>
         </div>
         <div class="btnWrap">
-            <div class="btn-black">수정 사항 저장</div>
-            <div class="btn-grey">수정 사항 초기화</div>
             <div class="btn-blue">선택 치환어 삭제</div>
             <div class="btn-excel">엑셀파일다운로드</div>
+            <div class="btn-black">수정 사항 저장</div>
+            <div class="btn-red">수정 사항 초기화</div>
         </div>
     </div>
 
