@@ -907,7 +907,6 @@ label input[type=radio]:checked {
   line-height: normal;
   letter-spacing: -0.24px;
   box-sizing: border-box;
-  padding-right: 46px;
 }
 .grid table .gridInput .inputBtn {
   position: absolute;
