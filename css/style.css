@@ -1099,6 +1099,23 @@ label input[type=radio]:checked {
   background: #D9D9D9;
 }
 
+.innerModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.innerModal.ac {
+  display: block;
+}
+.innerModal .modal-content {
+  width: 720px;
+}
+.innerModal .modal-content .imgWrap img {
+  height: 400px;
+}
+
 .modal .modal-content {
   border-radius: 30px;
 }
@@ -1281,6 +1298,7 @@ label input[type=radio]:checked {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  gap: 16px;
   padding-top: 20px;
   padding-bottom: 12px;
 }
@@ -1288,6 +1306,7 @@ label input[type=radio]:checked {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  gap: 8px;
 }
 .modal .inputWrap .mesg {
   margin-top: 4px;

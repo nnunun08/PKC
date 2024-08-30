@@ -46,7 +46,7 @@
                     <select style="min-width: 160px;">
                         <option value="치환 리스트 1">치환 리스트 1</option>
                     </select>
-                    <div class="btn-blue">템플릿 추가</div>
+                    <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal05">템플릿 추가</div>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                         <path d="M1 1L6 6L1 11" stroke="black"/>
                     </svg>
                     <input type="text" placeholder="변경 후" style="width: 104px;">
-                    <div class="btn-blue">추가</div>
+                    <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal05-1">추가</div>
                 </div>
             </div>
         </div>
@@ -124,14 +124,85 @@
         </div>
         <div class="btnWrap">
             <div class="btn-blue">선택 치환어 삭제</div>
+            <div class="btn-excel" data-bs-toggle="modal" data-bs-target="#modal08">엑셀파일업로드</div>
             <div class="btn-excel">엑셀파일다운로드</div>
             <div class="btn-black">수정 사항 저장</div>
             <div class="btn-red">수정 사항 초기화</div>
         </div>
     </div>
 
+    <!-- 금지어/금지 템플릿 추가 -->
+    <div class="modal fade" id="modal05" tabindex="-1" aria-labelledby="modal05Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal05Label">금지어/금지 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- 치환어 템플릿 추가 -->
+    <div class="modal fade" id="modal05-1" tabindex="-1" aria-labelledby="modal05-1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal05-1Label">치환어 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
-
+    <!-- 엑셀 파일 업로드 -->
+    <div class="modal fade" id="modal08" tabindex="-1" aria-labelledby="modal08Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal08Label">엑셀 파일 업로드</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="flex gap4">
+                        <input type="text" placeholder="파일명">
+                        <label class="btn-blue">
+                            파일선택
+                            <input type="file" style="display: none;">
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">파일 업로드</button>
+            </div>
+        </div>
+        </div>
+    </div>
     
 
 

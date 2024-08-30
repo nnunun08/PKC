@@ -29,151 +29,818 @@
         <div class="menu">금지 코드 관리</div>
         <div class="group">설정</div>
         <div class="menu">마켓API 관리</div>
-        <div class="menu">템플릿 관리</div>
-        <div class="menu ac">기타 설정</div>
+        <div class="menu ac">템플릿 관리</div>
+        <div class="menu">기타 설정</div>
         <div class="group">기타</div>
         <div class="menu">상품코드 찾기</div>
     </div>
 
 
     <div class="contents">
-        <h1>기타 설정</h1>
+        <h1>템플릿 관리</h1>
 
-        <div class="sectionTit">
-            <label>기본정보</label>
-        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">배송템플릿</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tab2-pane" type="button" role="tab" aria-controls="tab2-pane" aria-selected="false">마켓 등록 템플릿</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tab3-pane" type="button" role="tab" aria-controls="tab3-pane" aria-selected="false">이미지 템플릿</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#tab4-pane" type="button" role="tab" aria-controls="tab4-pane" aria-selected="false" >마진 템플릿</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#tab5-pane" type="button" role="tab" aria-controls="tab5-pane" aria-selected="false">태그 템플릿</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane show active" id="tab1-pane" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+                <div>
+                    <div class="box" style="margin-bottom: 20px;">
+                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal09">배송 템플릿 추가하기</div>
+                    </div>
 
-        <div>
-            <div class="tableWrap">
-                <table class="table">
-                    <colgroup>
-                        <col width="180px">
-                        <col>
-                    </colgroup>
-                    <tr>
-                        <th>ID</th>
-                        <td><div class="value">[이메일 형식 아이디]</div></td>
-                    </tr>
-                    <tr>
-                        <th>닉네임</th>
-                        <td>
-                            <div class="conWrap">
-                                <div class="box">
-                                    <input type="text" placeholder="닉네임 변경">
-                                    <div class="btn-blue">변경</div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>이용 중인 플랜</th>
-                        <td><div class="value">[이용 중인 플랜]</div></td>
-                    </tr>
-                </table>
+                    <div class="tray">
+                        <!-- <div class="count">검색건수&nbsp;&nbsp;150</div> -->
+                        <div class="grid">
+                            <table>
+                                <tbody><tr>
+                                    <th style="width: 40px;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </th>
+                                    <th style="text-align: center; width: 72px;">번호</th>
+                                    <th>템플릿 이름</th>
+                                    <th>등록일자</th>
+                                    <th style="text-align: center; width: 72px;">수정</th>
+                                    <th style="text-align: center; width: 72px;">삭제</th>
+                                    <th style="text-align: center; width: 72px;">복사</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>배송 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>배송 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>배송 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>배송 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="paging">
+                            <div class="first"></div>
+                            <div class="prev"></div>
+                            <div class="num ac">1</div>
+                            <div class="num">2</div>
+                            <div class="next"></div>
+                            <div class="last"></div>
+                        </div>
+                    </div>
+
+                    <div class="btnWrap">
+                        <div class="btn-excel">엑셀파일다운로드</div>
+                        <div class="btn-red">선택 템플릿 삭제</div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="tab-pane" id="tab2-pane" role="tabpanel" aria-labelledby="tab2" tabindex="0">
+                <div>
+                    <div class="box" style="margin-bottom: 20px;">
+                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal09-1">마켓 등록 템플릿 추가하기</div>
+                    </div>
 
-        <div class="sectionTit">
-            <label>상품 옵션 기본 설정</label>
-        </div>
+                    <div class="tray">
+                        <!-- <div class="count">검색건수&nbsp;&nbsp;150</div> -->
+                        <div class="grid">
+                            <table>
+                                <tbody><tr>
+                                    <th style="width: 40px;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </th>
+                                    <th style="text-align: center; width: 72px;">번호</th>
+                                    <th>템플릿 이름</th>
+                                    <th>등록일자</th>
+                                    <th style="text-align: center; width: 72px;">수정</th>
+                                    <th style="text-align: center; width: 72px;">삭제</th>
+                                    <th style="text-align: center; width: 72px;">복사</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마켓 등록 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마켓 등록 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마켓 등록 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마켓 등록 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="paging">
+                            <div class="first"></div>
+                            <div class="prev"></div>
+                            <div class="num ac">1</div>
+                            <div class="num">2</div>
+                            <div class="next"></div>
+                            <div class="last"></div>
+                        </div>
+                    </div>
 
-        <div class="box" style="margin-bottom: 20px;">
-            <select>
-                <option value="전체">전체</option>
-            </select>
-        </div>
-
-        <div>
-            <div class="tableWrap">
-                <table class="table">
-                    <colgroup>
-                        <col width="180px">
-                        <col>
-                    </colgroup>
-                    <tr>
-                        <th>기본 마진 템플릿</th>
-                        <td>
-                            <div class="conWrap">
-                                <div class="box">
-                                    <select>
-                                        <option value="마진템플릿 1번">마진템플릿 1번</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>마진율 적용 가격</th>
-                        <td>
-                            <div class="box">
-                                <label><input type="radio" name="radio1" checked="">원가</label>
-                                <label><input type="radio" name="radio1">판매가</label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>번역툴 설정</th>
-                        <td>
-                            <div class="flex gap10">
-                                <div class="box">
-                                    <select>
-                                        <option value="구글 번역">구글 번역</option>
-                                    </select>
-                                    <div class="btn-blue">API키 발급</div>
-                                </div>
-                                <div class="box">
-                                    <input type="text" placeholder="API키 입력">
-                                    <div class="btn-blue">확인</div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>중복상품 수집 제외</th>
-                        <td>
-                            <div class="box">
-                                <label><input type="radio" name="radio2" checked="">On</label>
-                                <label><input type="radio" name="radio2">Off</label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>무료 배송 여부</th>
-                        <td>
-                            <div class="box">
-                                <label><input type="radio" name="radio3" checked="">On</label>
-                                <label><input type="radio" name="radio3">Off</label>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                    <div class="btnWrap">
+                        <div class="btn-excel">엑셀파일다운로드</div>
+                        <div class="btn-red">선택 템플릿 삭제</div>
+                    </div>
+                </div>
             </div>
-            <div class="btnWrap">
-                <div class="btn-black">수정</div>
-                <div class="btn-grey">취소</div>
+            <div class="tab-pane" id="tab3-pane" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+                <div>
+                    <div class="box" style="margin-bottom: 20px;">
+                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal09-2">이미지 템플릿 추가하기</div>
+                    </div>
+
+                    <div class="tray">
+                        <!-- <div class="count">검색건수&nbsp;&nbsp;150</div> -->
+                        <div class="grid">
+                            <table>
+                                <tbody><tr>
+                                    <th style="width: 40px;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </th>
+                                    <th style="text-align: center; width: 72px;">번호</th>
+                                    <th>템플릿 이름</th>
+                                    <th>등록일자</th>
+                                    <th style="text-align: center; width: 72px;">수정</th>
+                                    <th style="text-align: center; width: 72px;">삭제</th>
+                                    <th style="text-align: center; width: 72px;">복사</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>이미지 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>이미지 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>이미지 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>이미지 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="paging">
+                            <div class="first"></div>
+                            <div class="prev"></div>
+                            <div class="num ac">1</div>
+                            <div class="num">2</div>
+                            <div class="next"></div>
+                            <div class="last"></div>
+                        </div>
+                    </div>
+
+                    <div class="btnWrap">
+                        <div class="btn-excel">엑셀파일다운로드</div>
+                        <div class="btn-red">선택 템플릿 삭제</div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="tab-pane" id="tab4-pane" role="tabpanel" aria-labelledby="tab4" tabindex="0">
+                <div>
+                    <div class="box" style="margin-bottom: 20px;">
+                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal09-3">마진 템플릿 추가하기</div>
+                    </div>
+
+                    <div class="tray">
+                        <!-- <div class="count">검색건수&nbsp;&nbsp;150</div> -->
+                        <div class="grid">
+                            <table>
+                                <tbody><tr>
+                                    <th style="width: 40px;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </th>
+                                    <th style="text-align: center; width: 72px;">번호</th>
+                                    <th>템플릿 이름</th>
+                                    <th>등록일자</th>
+                                    <th style="text-align: center; width: 72px;">수정</th>
+                                    <th style="text-align: center; width: 72px;">삭제</th>
+                                    <th style="text-align: center; width: 72px;">복사</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마진 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마진 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마진 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>마진 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="paging">
+                            <div class="first"></div>
+                            <div class="prev"></div>
+                            <div class="num ac">1</div>
+                            <div class="num">2</div>
+                            <div class="next"></div>
+                            <div class="last"></div>
+                        </div>
+                    </div>
+
+                    <div class="btnWrap">
+                        <div class="btn-excel">엑셀파일다운로드</div>
+                        <div class="btn-red">선택 템플릿 삭제</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab5-pane" role="tabpanel" aria-labelledby="tab5" tabindex="0">
+                <div>
+                    <div class="box" style="margin-bottom: 20px;">
+                        <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal05">태그 템플릿 추가하기</div>
+                    </div>
+
+                    <div class="tray">
+                        <!-- <div class="count">검색건수&nbsp;&nbsp;150</div> -->
+                        <div class="grid">
+                            <table>
+                                <tbody><tr>
+                                    <th style="width: 40px;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </th>
+                                    <th style="text-align: center; width: 72px;">번호</th>
+                                    <th>템플릿 이름</th>
+                                    <th>등록일자</th>
+                                    <th style="text-align: center; width: 72px;">수정</th>
+                                    <th style="text-align: center; width: 72px;">삭제</th>
+                                    <th style="text-align: center; width: 72px;">복사</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>태그 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>태그 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>태그 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <label class="checkboxLabel"><input type="checkbox"></label>
+                                    </td>
+                                    <td style="text-align: center;">##</td>
+                                    <td>태그 템플릿 #</td>
+                                    <td>2024.10.21 14:00</td>
+                                    <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                    <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                    <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="paging">
+                            <div class="first"></div>
+                            <div class="prev"></div>
+                            <div class="num ac">1</div>
+                            <div class="num">2</div>
+                            <div class="next"></div>
+                            <div class="last"></div>
+                        </div>
+                    </div>
+
+                    <div class="btnWrap">
+                        <div class="btn-excel">엑셀파일다운로드</div>
+                        <div class="btn-red">선택 템플릿 삭제</div>
+                    </div>
+                </div>
+            </div>
+          </div>
         
     </div>
 
-    <!-- API 추가 -->
+    <!-- 배송 템플릿 추가 -->
     <div class="modal fade" id="modal09" tabindex="-1" aria-labelledby="modal09Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title" id="modal09Label">API 추가</h1>
+            <h1 class="modal-title" id="modal09Label">배송 템플릿 추가</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="formWrap">
                     <div class="inputWrap">
-                        <div class="inputLabel">API 이름</div>
-                        <input type="text" placeholder="API 이름을 입력해 주세요">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">배송 기본 정보</div>
+                        <div class="flex gap10">
+                            <!-- <label class="grey">배송비 입력</label> -->
+                            <label class="checkboxLabel"><input type="checkbox" checked="">배송비 상품 가격에 포함 및 무료 배송 설정</label>
+                            <input type="text" placeholder="배송비 입력">
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">배송 옵션</div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">쿠팡 반품배송비 (편도) 최대금액 자동 설정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">마켓 배송비 정책 위배 시 자동 조정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">쿠팡 반품배송비 (편도) 최대금액 자동 설정</label>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">소싱 사이트 배송비 상품가격에 포함</label>
+                        <div class="flex gap10">
+                            <label class="checkboxLabel"><input type="checkbox" checked="">추가 배송비 적용</label>
+                            <div class="inputWrap" style="flex: 1 0 0;">
+                                <!-- <div class="inputLabel">도서 산간 추가 배송비</div> -->
+                                <input type="text" placeholder="도서 산간 추가 배송비">
+                            </div>
+                            <div class="inputWrap" style="flex: 1 0 0;">
+                                <!-- <div class="inputLabel">제주 추가 배송비</div> -->
+                                <input type="text" placeholder="제주 추가 배송비">
+                            </div>
+                        </div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">일정 금액 이상 구매 시 무료 배송</label>
+                        <div class="flex gap4">
+                            <label class="checkboxLabel"><input type="checkbox" checked=""></label>
+                            <input type="text" style="width: 124px; flex: 0 0 auto;">
+                            <div class="inputLabel">원 이상 구매 시 무료 배송</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer btnWrap">
                 <button type="button" class="btn-black btn-full">추가하기</button>
+                <button type="button" class="btn-grey btn-full">기존 템플릿에서 복제하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 배송 템플릿 추가 -->
+    <div class="modal fade" id="modal09-1" tabindex="-1" aria-labelledby="modal09-1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 620px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal09-1Label">마켓 등록 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">상품 가격 선택</div>
+                        <div class="flex gap10">
+                            <label>소싱 상품 가격 선택</label>
+                            <select style="width: 220px; flex: 0 0 auto">
+                                <option value="소싱처 판매가격(할인 후 가격)사용">소싱처 판매가격(할인 후 가격)사용</option>
+                            </select>
+                            <label class="checkboxLabel"><input type="checkbox" checked="">마켓 정책 위배 시에만 판매가격 조정</label>
+                        </div>
+                        <div class="flex gap10">
+                            <label>판매 상품 가격 선택</label>
+                            <select style="width: 220px; flex: 0 0 auto">
+                                <option value="최저가 기준 + 정책 위배 옵션 제외">최저가 기준 + 정책 위배 옵션 제외</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inputWrap">
+                        <div class="inputLabel">판매 옵션</div>
+                        <div class="flex gap10">
+                            <label>메인 이미지 지정 방법</label>
+                            <select>
+                                <option value="지정된 이미지 노출 설정">지정된 이미지 노출 설정</option>
+                            </select>
+                        </div>
+                        <div class="flex gap10">
+                            <label>메인 이미지 선택</label>
+                            <select>
+                                <option value="첫번째 이미지">첫번째 이미지</option>
+                            </select>
+                        </div>
+                        <label class="checkboxLabel"><input type="checkbox" checked="">모든 마켓 등록 실패 시 상품 삭제</label>
+                        <div class="box">
+                            <label><input type="radio" name="radio" checked="">원산지 소싱 사이트로 국가로 설정</label>
+                            <label><input type="radio" name="radio">원산지 기타/해외로 설정</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+                <button type="button" class="btn-grey btn-full">기존 템플릿에서 복제하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 이미지 템플릿 추가 -->
+    <div class="modal fade" id="modal09-2" tabindex="-1" aria-labelledby="modal09-2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 620px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal09-2Label">이미지 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">이미지 첨부</div>
+                        <div class="box">
+                            <label><input type="radio" name="radio2" checked="">이미지 파일</label>
+                            <label><input type="radio" name="radio2">URL</label>
+                        </div>
+                        <div class="flex gap4">
+                            <label>상단</label>
+                            <input type="text" placeholder="파일명" readonly>
+                            <label class="btn-blue">
+                                변경
+                                <input type="file" style="display: none;">
+                            </label>
+                            <div class="btn-blue" class="btn" onclick="preview()">미리보기</div>
+                        </div>
+                        <div class="flex gap4">
+                            <label>하단</label>
+                            <input type="text" placeholder="파일명" readonly>
+                            <label class="btn-blue">
+                                변경
+                                <input type="file" style="display: none;">
+                            </label>
+                            <div class="btn-blue" class="btn" onclick="preview()">미리보기</div>
+                        </div>
+                    </div>
+
+                    <div class="innerModal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title" id="modal10Label">이미지 미리보기</h1>
+                            <button type="button" class="btn-close" onclick="previewClose()"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="imgWrap">
+                                    <img src="https://c.pxhere.com/photos/1c/22/clouds_sky_sky_clouds_blue_sky_clouds_blue_nature_weather_light-694199.jpg!d" alt="img">
+                                </div>
+                            </div>
+                            <div class="modal-footer btnWrap">
+                                <button type="button" class="btn-black btn-full" onclick="previewClose()">확인</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const innerModal = document.querySelector('.innerModal')
+                        function preview() {
+                            innerModal.classList.add('ac')
+                        }
+                        function previewClose() {
+                            innerModal.classList.remove('ac')
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+                <button type="button" class="btn-grey btn-full">기존 템플릿에서 복제하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 마진 템플릿 추가 -->
+    <div class="modal fade" id="modal09-3" tabindex="-1" aria-labelledby="modal09-3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 620px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal09-3Label">마진 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">마진 기준 추가</div>
+                        <div class="flex gap10">
+                            <input type="text" placeholder="기준 상품 가격">
+                            <input type="text" placeholder="추가 금액 비율(%)">
+                        </div>
+                    </div>
+                    <div class="inputWrap">
+                        <div class="inputLabel">마진 정보</div>
+                        <div class="tray" style="margin: 0;">
+                            <div class="grid">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <th style="width: 40px;">
+                                            <label class="checkboxLabel"><input type="checkbox"></label>
+                                        </th>
+                                        <th style="text-align: center; width: 52px;">번호</th>
+                                        <th>기준 상품 가격</th>
+                                        <th>추가 퍼센트</th>
+                                        <th style="text-align: center; width: 52px;">수정</th>
+                                        <th style="text-align: center; width: 52px;">삭제</th>
+                                        <th style="text-align: center; width: 52px;">복사</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <label class="checkboxLabel"><input type="checkbox"></label>
+                                        </td>
+                                        <td style="text-align: center;">##</td>
+                                        <td>1원 이상</td>
+                                        <td>10%</td>
+                                        <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                        <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                        <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <label class="checkboxLabel"><input type="checkbox"></label>
+                                        </td>
+                                        <td style="text-align: center;">##</td>
+                                        <td>배송 템플릿 #</td>
+                                        <td>2024.10.21 14:00</td>
+                                        <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                        <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                        <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <label class="checkboxLabel"><input type="checkbox"></label>
+                                        </td>
+                                        <td style="text-align: center;">##</td>
+                                        <td>배송 템플릿 #</td>
+                                        <td>2024.10.21 14:00</td>
+                                        <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                        <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                        <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <label class="checkboxLabel"><input type="checkbox"></label>
+                                        </td>
+                                        <td style="text-align: center;">##</td>
+                                        <td>배송 템플릿 #</td>
+                                        <td>2024.10.21 14:00</td>
+                                        <td style="text-align: center;"><div class="btn on">수정</div></td>
+                                        <td style="text-align: center;"><div class="btn on">삭제</div></td>
+                                        <td style="text-align: center;"><div class="btn on">복사</div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <div class="btn-blue">저장</div>
+                            <div class="btn-grey">취소</div>
+                            <div class="btn-excel">엑셀파일다운로드</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">추가하기</button>
+                <button type="button" class="btn-grey btn-full">기존 템플릿에서 복제하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 이미지 미리보기 -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal10Label">이미지 미리보기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="imgWrap">
+                    <img src="https://c.pxhere.com/photos/1c/22/clouds_sky_sky_clouds_blue_sky_clouds_blue_nature_weather_light-694199.jpg!d" alt="img">
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 태그 템플릿 추가 -->
+    <div class="modal fade" id="modal05" tabindex="-1" aria-labelledby="modal05Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="modal05Label">태그 템플릿 추가</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="formWrap">
+                    <div class="inputWrap">
+                        <div class="inputLabel">템플릿 이름</div>
+                        <input type="text" placeholder="템플릿 이름을 입력해 주세요">
+                    </div>
+
+                    <div class="inputWrap">
+                        <div class="inputLabel">태그 추가</div>
+                        <div class="flex">
+                            <input type="text" placeholder="추가할 태그명을 입력해 주세요">
+                            <div class="btn-blue">추가</div>
+                        </div>
+                    </div>
+
+                    <div class="insertWrap">
+                        <div class="flex">
+                            <div class="name">태그명1</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명2</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명3</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                        <div class="flex">
+                            <div class="name">태그명4</div>
+                            <div class="btn-skyblue">삭제</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer btnWrap">
+                <button type="button" class="btn-black btn-full">확인</button>
             </div>
         </div>
         </div>
