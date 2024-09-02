@@ -350,22 +350,22 @@ select {
 	.toggleObject {
 		width: 36px;
 		height: 20px;
-		background: url(/img/ic_toggle_off.svg) center no-repeat;
+		background: url(../img/ic_toggle_off.svg) center no-repeat;
 	}
 	input:checked + .toggleObject {
-		background-image: url(/img/ic_toggle_on.svg);
+		background-image: url(../img/ic_toggle_on.svg);
 	}
 }
 select {
 	padding-right: 30px;
-	background: #EDEEF1 url(/img/ic_select_arr.svg) center right 12px no-repeat;
+	background: #EDEEF1 url(../img/ic_select_arr.svg) center right 12px no-repeat;
 	&:active, &:focus-visible {
 		outline: 1px solid #000;
 	}
 }
 .search {
 	padding-left: 38px;
-	background: #EDEEF1 url(/img/ic_serach.svg) center left 14px no-repeat;
+	background: #EDEEF1 url(../img/ic_serach.svg) center left 14px no-repeat;
 	border-radius: 100px;
 }
 [class*="Btn"],
@@ -477,7 +477,7 @@ select {
 		content: '';
 		width: 18px;
 		height: 20px;
-		background: url(/img/ic_excel.svg) center no-repeat;
+		background: url(../img/ic_excel.svg) center no-repeat;
 	}
 }
 
@@ -502,9 +502,9 @@ label {
 		height: 20px;
 		padding: 0;
 		margin: 0;
-		background: #fff url(/img/ic_radio_off.svg) center no-repeat;
+		background: #fff url(../img/ic_radio_off.svg) center no-repeat;
 		&:checked {
-			background-image: url(/img/ic_radio_on.svg);
+			background-image: url(../img/ic_radio_on.svg);
 		}
 	}
 }
@@ -535,9 +535,9 @@ label {
 		display: block;
 		width: 20px;
 		height: 20px;
-		background: transparent url(/img/ic_checkbox_off.svg) center no-repeat;
+		background: transparent url(../img/ic_checkbox_off.svg) center no-repeat;
 		&:checked {
-			background-image: url(/img/ic_checkbox_on.svg);
+			background-image: url(../img/ic_checkbox_on.svg);
 		}
 	}
 	
@@ -695,13 +695,13 @@ label {
 	.last {
 		width: 32px;
 		height: 32px;
-		background: url(/img/ic_paging_arr_double.svg) center no-repeat;
+		background: url(../img/ic_paging_arr_double.svg) center no-repeat;
 	}
 	.prev,
 	.next {
 		width: 32px;
 		height: 32px;
-		background: url(/img/ic_paging_arr.svg) center no-repeat;
+		background: url(../img/ic_paging_arr.svg) center no-repeat;
 	}
 	.next {
 		transform: rotate(180deg);
@@ -791,7 +791,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_amazon.svg) center no-repeat;
+			background: url(../img/ic_channel_amazon.svg) center no-repeat;
 		}
 		.evay {
 			width: 16px;
@@ -799,7 +799,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_evay.svg) center no-repeat;
+			background: url(../img/ic_channel_evay.svg) center no-repeat;
 		}
 		.rakuten {
 			width: 16px;
@@ -807,7 +807,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_rakuten.svg) center no-repeat;
+			background: url(../img/ic_channel_rakuten.svg) center no-repeat;
 		}
 		.temu {
 			width: 16px;
@@ -815,7 +815,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_temu.svg) center no-repeat;
+			background: url(../img/ic_channel_temu.svg) center no-repeat;
 		}
 		.taobao {
 			width: 16px;
@@ -823,7 +823,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_taobao.svg) center no-repeat;
+			background: url(../img/ic_channel_taobao.svg) center no-repeat;
 		}
 		.ali {
 			width: 16px;
@@ -831,7 +831,7 @@ label {
 			display: inline-block;
 			margin-bottom: -3px;
 			margin-right: 4px;
-			background: url(/img/ic_channel_ali.svg) center no-repeat;
+			background: url(../img/ic_channel_ali.svg) center no-repeat;
 		}
 
 
@@ -844,7 +844,7 @@ label {
 				cursor: pointer;
 				width: 14px;
 				height: 36px;
-				background: url(/img/ic_imgSlide_arr.svg) center no-repeat;
+				background: url(../img/ic_imgSlide_arr.svg) center no-repeat;
 			}
 			.next {
 				transform: rotate(180deg);
@@ -872,7 +872,7 @@ label {
 			cursor: pointer;
 			width: 16px;
 			height: 16px;
-			background: url(/img/ic_plus.svg) center no-repeat;
+			background: url(../img/ic_plus.svg) center no-repeat;
 		}
 
 		.gridInput {
@@ -930,7 +930,7 @@ label {
 		.lock {
 			width: 16px;
 			height: 16px;
-			background: url(/img/ic_lock.svg) center no-repeat;
+			background: url(../img/ic_lock.svg) center no-repeat;
 			margin: 0 auto;
 		}
 	}
@@ -1080,7 +1080,7 @@ label {
 		width: 24px;
 		height: 24px;
 		border-radius: 8px;
-		background: #E0E2E7 url(/img/ic_remove.svg) center no-repeat;
+		background: #E0E2E7 url(../img/ic_remove.svg) center no-repeat;
 		cursor: pointer;
 	}
 }
