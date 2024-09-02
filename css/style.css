@@ -348,15 +348,15 @@ select::placeholder {
 .toggle .toggleObject {
   width: 36px;
   height: 20px;
-  background: url(/img/ic_toggle_off.svg) center no-repeat;
+  background: url(../img/ic_toggle_off.svg) center no-repeat;
 }
 .toggle input:checked + .toggleObject {
-  background-image: url(/img/ic_toggle_on.svg);
+  background-image: url(../img/ic_toggle_on.svg);
 }
 
 select {
   padding-right: 30px;
-  background: #EDEEF1 url(/img/ic_select_arr.svg) center right 12px no-repeat;
+  background: #EDEEF1 url(../img/ic_select_arr.svg) center right 12px no-repeat;
 }
 select:active, select:focus-visible {
   outline: 1px solid #000;
@@ -364,7 +364,7 @@ select:active, select:focus-visible {
 
 .search {
   padding-left: 38px;
-  background: #EDEEF1 url(/img/ic_serach.svg) center left 14px no-repeat;
+  background: #EDEEF1 url(../img/ic_serach.svg) center left 14px no-repeat;
   border-radius: 100px;
 }
 
@@ -482,7 +482,7 @@ select:active, select:focus-visible {
   content: "";
   width: 18px;
   height: 20px;
-  background: url(/img/ic_excel.svg) center no-repeat;
+  background: url(../img/ic_excel.svg) center no-repeat;
 }
 
 .btn-full {
@@ -507,10 +507,10 @@ label input[type=radio] {
   height: 20px;
   padding: 0;
   margin: 0;
-  background: #fff url(/img/ic_radio_off.svg) center no-repeat;
+  background: #fff url(../img/ic_radio_off.svg) center no-repeat;
 }
 label input[type=radio]:checked {
-  background-image: url(/img/ic_radio_on.svg);
+  background-image: url(../img/ic_radio_on.svg);
 }
 
 .btnWrap {
@@ -539,10 +539,10 @@ label input[type=radio]:checked {
   display: block;
   width: 20px;
   height: 20px;
-  background: transparent url(/img/ic_checkbox_off.svg) center no-repeat;
+  background: transparent url(../img/ic_checkbox_off.svg) center no-repeat;
 }
 .checkboxLabel input[type=checkbox]:checked {
-  background-image: url(/img/ic_checkbox_on.svg);
+  background-image: url(../img/ic_checkbox_on.svg);
 }
 
 .toggleBtnBox {
@@ -694,13 +694,13 @@ label input[type=radio]:checked {
 .paging .last {
   width: 32px;
   height: 32px;
-  background: url(/img/ic_paging_arr_double.svg) center no-repeat;
+  background: url(../img/ic_paging_arr_double.svg) center no-repeat;
 }
 .paging .prev,
 .paging .next {
   width: 32px;
   height: 32px;
-  background: url(/img/ic_paging_arr.svg) center no-repeat;
+  background: url(../img/ic_paging_arr.svg) center no-repeat;
 }
 .paging .next {
   transform: rotate(180deg);
@@ -790,7 +790,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_amazon.svg) center no-repeat;
+  background: url(../img/ic_channel_amazon.svg) center no-repeat;
 }
 .grid table .evay {
   width: 16px;
@@ -798,7 +798,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_evay.svg) center no-repeat;
+  background: url(../img/ic_channel_evay.svg) center no-repeat;
 }
 .grid table .rakuten {
   width: 16px;
@@ -806,7 +806,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_rakuten.svg) center no-repeat;
+  background: url(../img/ic_channel_rakuten.svg) center no-repeat;
 }
 .grid table .temu {
   width: 16px;
@@ -814,7 +814,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_temu.svg) center no-repeat;
+  background: url(../img/ic_channel_temu.svg) center no-repeat;
 }
 .grid table .taobao {
   width: 16px;
@@ -822,7 +822,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_taobao.svg) center no-repeat;
+  background: url(../img/ic_channel_taobao.svg) center no-repeat;
 }
 .grid table .ali {
   width: 16px;
@@ -830,7 +830,7 @@ label input[type=radio]:checked {
   display: inline-block;
   margin-bottom: -3px;
   margin-right: 4px;
-  background: url(/img/ic_channel_ali.svg) center no-repeat;
+  background: url(../img/ic_channel_ali.svg) center no-repeat;
 }
 .grid table .imgWrap {
   display: flex;
@@ -842,7 +842,7 @@ label input[type=radio]:checked {
   cursor: pointer;
   width: 14px;
   height: 36px;
-  background: url(/img/ic_imgSlide_arr.svg) center no-repeat;
+  background: url(../img/ic_imgSlide_arr.svg) center no-repeat;
 }
 .grid table .imgWrap .next {
   transform: rotate(180deg);
@@ -869,7 +869,7 @@ label input[type=radio]:checked {
   cursor: pointer;
   width: 16px;
   height: 16px;
-  background: url(/img/ic_plus.svg) center no-repeat;
+  background: url(../img/ic_plus.svg) center no-repeat;
 }
 .grid table .gridInput {
   position: relative;
@@ -924,7 +924,7 @@ label input[type=radio]:checked {
 .grid table .lock {
   width: 16px;
   height: 16px;
-  background: url(/img/ic_lock.svg) center no-repeat;
+  background: url(../img/ic_lock.svg) center no-repeat;
   margin: 0 auto;
 }
 
@@ -1058,7 +1058,7 @@ label input[type=radio]:checked {
   width: 24px;
   height: 24px;
   border-radius: 8px;
-  background: #E0E2E7 url(/img/ic_remove.svg) center no-repeat;
+  background: #E0E2E7 url(../img/ic_remove.svg) center no-repeat;
   cursor: pointer;
 }
 
