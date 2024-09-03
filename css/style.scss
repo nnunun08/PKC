@@ -25,6 +25,7 @@ body {
 	}
 	&:has(.dashboard) {
 		min-width: 768px;
+		min-width: 425px;
 	}
 	@media screen and (max-width:768px) {
 		padding-left: 0;
@@ -68,6 +69,11 @@ input {
 // 모바일브레이크 포인트
 @media screen and (max-width:1280px) {
 	
+}
+
+.modal-backdrop {
+	width: 100%;
+	height: 100%;
 }
   
 
@@ -129,6 +135,11 @@ h1 {
 	margin-bottom: 10px;
 }
 
+.offcanvas-backdrop {
+	width: 100%;
+	height: 100%;
+}
+
 .gnb {
 	z-index: 10;
 	position: fixed;
@@ -153,7 +164,49 @@ h1 {
 		gap: 20px;
 	}
 	.btn {
-		background: #0C41AC;
+		background: #0C41AC !important;
+		color: #fff !important;
+		border: 0;
+		&:active {
+		}
+	}
+	.bell {
+		position: relative;
+		.new {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #FF1C1C;
+		}
+		.bellCon {
+			position: absolute;
+			top: 150%;
+			max-height: 240px;
+			box-sizing: border-box;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: left;
+			background-color: rgba(227, 228, 232, 0.85);
+			backdrop-filter: blur(12px);
+			border-radius: 8px;
+			overflow: auto;
+			// box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+			.list {
+				max-width: 240px;
+				width: max-content;
+				padding: 8px 12px;
+				border-bottom: 1px solid #E3E3E8;
+				font-size: 13px;
+				font-weight: 500;
+				line-height: 1.4;
+				&:last-child {
+					border: 0;
+				}
+			}
+		}
 	}
 	.mobileMenu {
 		display: none;
@@ -283,6 +336,9 @@ h1 {
 	padding: 11px 40px;
 	gap: 20px;
 	box-sizing: border-box;
+	.checkboxLabel {
+		margin-left: 8px;
+	}
 }
 
 .box {
@@ -321,6 +377,13 @@ select {
 	letter-spacing: -0.24px;
 	&::placeholder {
 		color: #B4BECC;
+	}
+	&:disabled {
+		background-color: #BEC0C5;
+		color: #A2A5AA;
+		&::placeholder {
+			color: #A2A5AA;
+		}
 	}
 }
 
@@ -457,6 +520,25 @@ select {
 	color: #E92E1E;
 	background: #FFE6E4;
 }
+
+.btn-remove {
+	margin: 0 2px;
+	font-family: Pretendard;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.24px;
+	display: flex;
+	height: 32px;
+	padding: 0px 20px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	color: #FFF;
+	background: #E92E1E;
+}
+
 .btn-excel {
 	font-family: Pretendard;
 	font-size: 12px;
@@ -524,7 +606,7 @@ label {
 .checkboxLabel {
 	display: flex;
 	align-items: center;
-	gap: 6px;
+	gap: 4px;
 	// margin: 4px 0;
 	input[type="checkbox"] {
 		margin: 0;
@@ -631,6 +713,9 @@ label {
 	.btn-blue {
 		height: 38px;
 	}
+	.checkboxLabel {
+		margin-left: 8px;
+	}
 
 }
 
@@ -719,6 +804,12 @@ label {
 		tr:has(td):hover {
 			background-color: #E9EDF4;
 		}
+		.imgColumn {
+			display: none;
+			&.on {
+				display: table-cell;
+			}
+		}
 		th {
 			padding: 4px;
 			vertical-align: middle;
@@ -774,6 +865,8 @@ label {
 			border-radius: 4px;
 			color: #A5ABB2 !important;
 			background: #D2D7DE !important;
+			color: #A2A5AA !important;
+			background: #BEC0C5 !important;
 			&.on {
 				background: #D0DFFF !important;
 				color: #3779FF !important;
@@ -867,11 +960,11 @@ label {
 
 		.plus {
 			display: inline-block;
-			margin-bottom: -3px;
+			margin-bottom: -7px;
 			margin-left: 8px;
 			cursor: pointer;
-			width: 16px;
-			height: 16px;
+			width: 22px;
+			height: 22px;
 			background: url(../img/ic_plus.svg) center no-repeat;
 		}
 
@@ -934,6 +1027,18 @@ label {
 			margin: 0 auto;
 		}
 	}
+
+	&.bigImg {
+		.wide {
+			width: 650px !important;
+		}
+		.imgWrap {
+			.img {
+				width: 120px;
+				height: 120px;
+			}
+		}
+	}
 }
 
 .sectionTit {
@@ -941,7 +1046,14 @@ label {
 	align-items: center;
 	gap: 10px;
 	padding: 10px 12px;
+	margin-top: 20px;
 	margin-bottom: 10px;
+	border-top: 1px solid #E3E3E8;
+	// border-bottom: 1px solid #E3E3E8;
+	&.noneBorder {
+		margin-top: 10px;
+		border: 0;
+	}
 	label {
 		color: #000;
 		font-family: Pretendard;

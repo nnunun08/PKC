@@ -24,8 +24,8 @@
         <div class="menu">등록 상품 관리</div>
         <div class="menu">전체 상품 내역</div>
         <div class="group">금지 사항 관리</div>
-        <div class="menu ac">금지어/금지브랜드 관리</div>
-        <div class="menu">치환어 관리</div>
+        <div class="menu">금지어/금지브랜드 관리</div>
+        <div class="menu ac">치환어 관리</div>
         <div class="menu">금지 코드 관리</div>
         <div class="group">설정</div>
         <div class="menu">마켓API 관리</div>
@@ -37,14 +37,14 @@
 
 
     <div class="contents">
-        <h1>금지어/금지브랜드 관리</h1>
+        <h1>치환어 관리</h1>
 
         <div class="tray">
             <div class="box col">
-                <div class="label">금지어/금지브랜드 템플릿 선택</div>
+                <div class="label">치환어 템플릿 선택</div>
                 <div class="flex">
                     <select style="min-width: 160px;">
-                        <option value="금지어 리스트 1">금지어 리스트 1</option>
+                        <option value="치환 리스트 1">치환 리스트 1</option>
                     </select>
                     <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal05">템플릿 추가</div>
                 </div>
@@ -53,9 +53,13 @@
 
         <div class="tray">
             <div class="box col">
-                <div class="label">금지어/금지브랜드 추가</div>
+                <div class="label">치환어 추가</div>
                 <div class="flex gap4">
-                    <input type="text" placeholder="" style="width: 200px;">
+                    <input type="text" placeholder="변경 전" style="width: 104px;">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L1 11" stroke="black"/>
+                    </svg>
+                    <input type="text" placeholder="변경 후" style="width: 104px;">
                     <div class="btn-blue" data-bs-toggle="modal" data-bs-target="#modal05-1">추가</div>
                 </div>
             </div>
@@ -64,7 +68,7 @@
         <div class="tray">
             <div class="flex gap20">
                 <div class="box">
-                    <input type="text" placeholder="금지어/금지브랜드 검색" class="search" style="width: 280px;">
+                    <input type="text" placeholder="치환어 검색" class="search" style="width: 280px;">
                 </div>
                 <div class="box" style="flex: 1 0 0;">
                     등록일자
@@ -92,7 +96,8 @@
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </th>
                         <th style="text-align: center; width: 72px;">번호</th>
-                        <th style="text-align: center;">금지어/금지 브랜드</th>
+                        <th style="text-align: center;">치환전</th>
+                        <th style="text-align: center;">치환후</th>
                         <th style="text-align: center;">등록일자</th>
                         <th style="text-align: center;"></th>
                     </tr>
@@ -101,25 +106,8 @@
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </td>
                         <td style="text-align: center;">##</td>
-                        <td style="text-align: center;">금지어 #</td>
-                        <td style="text-align: center;">2024.10.21 14:00</td>
-                        <td style="text-align: center;"><div class="btn">삭제</div></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <label class="checkboxLabel"><input type="checkbox"></label>
-                        </td>
-                        <td style="text-align: center;">##</td>
-                        <td style="text-align: center;">금지어 #</td>
-                        <td style="text-align: center;">2024.10.21 14:00</td>
-                        <td style="text-align: center;"><div class="btn">삭제</div></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <label class="checkboxLabel"><input type="checkbox"></label>
-                        </td>
-                        <td style="text-align: center;">##</td>
-                        <td style="text-align: center;">금지어 #</td>
+                        <td style="text-align: center;">변경 전 단어</td>
+                        <td style="text-align: center;">변경 전 단어</td>
                         <td style="text-align: center;">2024.10.21 14:00</td>
                         <td style="text-align: center;"><div class="btn">삭제</div></td>
                     </tr>
@@ -135,7 +123,7 @@
             </div>
         </div>
         <div class="btnWrap">
-            <div class="btn-blue">선택 금지어 삭제</div>
+            <div class="btn-blue">선택 치환어 삭제</div>
             <div class="btn-excel" data-bs-toggle="modal" data-bs-target="#modal08">엑셀파일업로드</div>
             <div class="btn-excel">엑셀파일다운로드</div>
             <div class="btn-black">수정 사항 저장</div>

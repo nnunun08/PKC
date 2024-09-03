@@ -51,7 +51,7 @@
             <input type="text" placeholder="상품명 입력" class="search">
             <!-- <div class="btn-red">초기화</div> -->
             <div class="btn-black">검색</div>
-            <label class="checkboxLabel"><input type="checkbox" checked="">이미지 크게보기</label>
+            <label class="checkboxLabel"><input type="checkbox" class="imgScale">이미지 크게보기</label>
         </div>
     </div>
 
@@ -85,6 +85,7 @@
 
         <div class="tray">
             <div class="count">검색건수&nbsp;&nbsp;150</div>
+
             <div class="grid">
                 <!-- 컬럼 수가 많은 경우는 테이블 최소 크기를 별도로 지정 : min-width 활용 -->
                 <table style="min-width: 1440px;">
@@ -93,7 +94,7 @@
                             <label class="checkboxLabel"><input type="checkbox"></label>
                         </th>
                         <th style="text-align: center; width: 72px; ">번호</th>
-                        <th style="text-align: center; width: 220px; ">이미지</th>
+                        <th style="text-align: center; width: 220px;" class="imgColumnTh">이미지</th>
                         <th>태그</th>
                         <th>글자수</th>
                         <th style="width: 260px;">상품명</th>
@@ -175,6 +176,7 @@
                     </tr>
                 </table>
             </div>
+
             <div class="paging">
                 <div class="first"></div>
                 <div class="prev"></div>
@@ -465,5 +467,6 @@
     </div>
 
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/imgScale.js"></script>
 </body>
 </html>

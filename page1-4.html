@@ -54,7 +54,7 @@
             <div class="box">
                 검색어 입력
                 <input type="text" placeholder="수집명 또는 상품명을 입력해주세요" class="search" style="width: 260px;">
-                <label class="checkboxLabel"><input type="checkbox" checked="">이미지 크게보기</label>
+                <label class="checkboxLabel"><input type="checkbox" class="imgToggle">이미지 표시</label>
             </div>
             <div class="box">
                 등록 마켓
@@ -125,6 +125,7 @@
                         </th>
                         <th style="text-align: center; width: 72px; ">번호</th>
                         <th style="text-align: center; width: 100px;">잠금</th>
+                        <th style="text-align: center; width: 220px; " class="imgColumn">이미지</th>
                         <th style="width: 200px;">메모</th>
                         <th style="width: 200px;">상품명</th>
                         <th>스마트스토어</th>
@@ -144,6 +145,17 @@
                         </td>
                         <td style="text-align: center;">##</td>
                         <td style="text-align: center;"><div class="btn on">잠그기</div></td>
+                        <td style="text-align: center; width: 220px; " class="imgColumn">
+                            <div class="imgWrap">
+                                <div class="prev"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="next"></div>
+                            </div>
+                        </td>
                         <td>
                             전체
                             <i class="plus"></i>
@@ -166,6 +178,17 @@
                         </td>
                         <td style="text-align: center;">##</td>
                         <td style="text-align: center;"><div class="lock"></div></td>
+                        <td style="text-align: center; width: 220px; " class="imgColumn">
+                            <div class="imgWrap">
+                                <div class="prev"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="next"></div>
+                            </div>
+                        </td>
                         <td>
                             전체
                             <i class="plus"></i>
@@ -188,6 +211,17 @@
                         </td>
                         <td style="text-align: center;">##</td>
                         <td style="text-align: center;"><div class="lock"></div></td>
+                        <td style="text-align: center; width: 220px; " class="imgColumn">
+                            <div class="imgWrap">
+                                <div class="prev"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/Se0e61eaca2ac4bacab19681f275f5cff6.jpg_480x480.jpg_.webp" alt="dummy"></div>
+                                <div class="next"></div>
+                            </div>
+                        </td>
                         <td>
                             <div class="gridInput">
                                 <input type="text" value="기존 메모 내용">
@@ -558,5 +592,10 @@
     </div>
 
 <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="./js/imgToggle.js"></script>
+
 </body>
 </html>
+
+
