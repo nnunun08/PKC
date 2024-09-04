@@ -314,6 +314,9 @@ h1 {
 		line-height: normal;
 		letter-spacing: -0.28px;
 		box-sizing: border-box;
+		&:hover {
+			background: #0e52da0f;
+		}
 		&.ac {
 			color: #FFF;
 			border-top: 1px solid #86A8EE;
@@ -360,7 +363,7 @@ h1 {
 }
 input,
 select {
-	border: 0;
+	transition: 0.5s;
 	position: relative;
 	border-radius: 10px;
 	background: #EDEEF1;
@@ -375,15 +378,24 @@ select {
 	font-weight: 600;
 	line-height: normal;
 	letter-spacing: -0.24px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
 	&::placeholder {
 		color: #B4BECC;
 	}
 	&:disabled {
+		border: 0;
 		background-color: #BEC0C5;
 		color: #A2A5AA;
+		cursor: no-drop;
 		&::placeholder {
 			color: #A2A5AA;
 		}
+	}
+	&:hover,
+	&:focus {
+		border-color: #000;
 	}
 }
 
@@ -421,20 +433,24 @@ select {
 }
 select {
 	padding-right: 30px;
-	background: #EDEEF1 url(../img/ic_select_arr.svg) center right 12px no-repeat;
+	background: #fff url(../img/ic_select_arr.svg) center right 12px no-repeat;
 	&:active, &:focus-visible {
 		outline: 1px solid #000;
 	}
 }
 .search {
 	padding-left: 38px;
-	background: #EDEEF1 url(../img/ic_serach.svg) center left 14px no-repeat;
+	// background: #EDEEF1 url(../img/ic_serach.svg) center left 14px no-repeat;
+	background: #fff url(../img/ic_serach.svg) center left 14px no-repeat;
 	border-radius: 100px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
 }
 [class*="Btn"],
 [class*="btn-"] {
 	cursor: pointer;
 	margin: 0 2px;
+	transition: 0.2s;
 }
 .btn-blue {
 	margin: 0 2px;
@@ -452,6 +468,9 @@ select {
 	border-radius: 8px;
 	color: #FFF;
 	background: #0E51DA;
+	&:hover {
+		background: #0641b6;
+	}
 }
 .btn-skyblue {
 	font-family: Pretendard;
@@ -468,6 +487,9 @@ select {
 	border-radius: 8px;
 	color: #3779FF;
 	background: #D0DFFF;
+	&:hover {
+		background-color: #c5d5f9;
+	}
 }
 .btn-black {
 	font-family: Pretendard;
@@ -484,6 +506,9 @@ select {
 	border-radius: 40px;
 	color: #fff;
 	background: #242424;
+	&:hover {
+		background-color: #000;
+	}
 }
 
 .btn-grey {
@@ -502,6 +527,9 @@ select {
 	border-radius: 8px;
 	color: #838A93;
 	background: #EDEEF1;
+	&:hover {
+		background: #dcdde0;
+	}
 }
 
 .btn-red {
@@ -519,6 +547,9 @@ select {
 	border-radius: 40px;
 	color: #E92E1E;
 	background: #FFE6E4;
+	&:hover {
+		background: #fad3d0;
+	}
 }
 
 .btn-remove {
@@ -537,6 +568,9 @@ select {
 	border-radius: 8px;
 	color: #FFF;
 	background: #E92E1E;
+	&:hover {
+		background: #d02313;
+	}
 }
 
 .btn-excel {
@@ -560,6 +594,9 @@ select {
 		width: 18px;
 		height: 20px;
 		background: url(../img/ic_excel.svg) center no-repeat;
+	}
+	&:hover {
+		background: #06774e;
 	}
 }
 
@@ -709,6 +746,9 @@ label {
 		line-height: normal;
 		letter-spacing: -0.24px;
 		margin: 0 2px;
+		&:hover {
+			background-color: #000;
+		}
 	}
 	.btn-blue {
 		height: 38px;
@@ -771,6 +811,9 @@ label {
 		line-height: normal;
 		letter-spacing: -0.3px;	
 		border-radius: 10px;
+		&:hover {
+			background-color: #00000011;
+		}
 		&.ac {
 			background: #0E51DA;
 			color: #fff;
@@ -778,15 +821,23 @@ label {
 	}
 	.first,
 	.last {
+		border-radius: 10px;
 		width: 32px;
 		height: 32px;
 		background: url(../img/ic_paging_arr_double.svg) center no-repeat;
+		&:hover {
+			background-color: #00000006;
+		}
 	}
 	.prev,
 	.next {
+		border-radius: 10px;
 		width: 32px;
 		height: 32px;
 		background: url(../img/ic_paging_arr.svg) center no-repeat;
+		&:hover {
+			background-color: #00000006;
+		}
 	}
 	.next {
 		transform: rotate(180deg);
@@ -867,9 +918,15 @@ label {
 			background: #D2D7DE !important;
 			color: #A2A5AA !important;
 			background: #BEC0C5 !important;
+			&:hover {
+				background: rgb(207, 210, 215) !important;
+			}
 			&.on {
 				background: #D0DFFF !important;
 				color: #3779FF !important;
+				&:hover {
+					background: #bfd3ff !important;
+				}
 			}
 		}
 		.status {
@@ -991,7 +1048,7 @@ label {
 			input {
 				width: 100%;
 				border-radius: 10px;
-				border: 1px solid #000;
+				border: 1px solid #ddd;
 				background: #FFF;
 				padding: 10px 16px;
 				padding: 10px;
@@ -1003,7 +1060,11 @@ label {
 				line-height: normal;
 				letter-spacing: -0.24px;
 				box-sizing: border-box;
+				box-shadow: 0px 3px 13px rgba(0,0,0,0.08);
 				// padding-right: 46px;
+				&:focus {
+					border-color: #000;
+				}
 			}
 			.inputBtn {
 				position: absolute;
