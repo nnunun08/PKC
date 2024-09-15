@@ -360,6 +360,9 @@ h1 {
 		flex-direction: column;
 		align-items: flex-start;
 	}
+	.boxLabel {
+		min-width: 100px;
+	}
 }
 input,
 select {
@@ -434,6 +437,7 @@ select {
 select {
 	padding-right: 30px;
 	background: #fff url(../img/ic_select_arr.svg) center right 12px no-repeat;
+	min-width: 100px;
 	&:active, &:focus-visible {
 		outline: 1px solid #000;
 	}
@@ -451,6 +455,7 @@ select {
 	cursor: pointer;
 	margin: 0 2px;
 	transition: 0.2s;
+	min-width: 100px;
 }
 .btn-blue {
 	margin: 0 2px;
@@ -635,6 +640,7 @@ label {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	[class*="btn"] {
+		min-width: 100px;
 		height: 38px;
 		border-radius: 8px;
 	}
@@ -681,6 +687,8 @@ label {
 			font-weight: 600;
 			line-height: normal;
 			letter-spacing: -0.24px;
+			width: 100%;
+			text-align: center;
 		}
 		input {
 			display: none;
@@ -731,6 +739,7 @@ label {
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: -0.26px;
+		
 
 	}
 	.commandBtn {
@@ -738,6 +747,7 @@ label {
 		padding: 12px 16px;
 		border-radius: 8px;
 		background: #242424;
+		text-align: center;
 		color: #FFF;
 		font-family: Pretendard;
 		font-size: 12px;
@@ -767,7 +777,8 @@ label {
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	gap:16px;
+	// gap:16px;
+	gap:8px;
 	.count {
 		color: #4A7CE2;
 		font-family: Pretendard;
@@ -1078,6 +1089,7 @@ label {
 				font-weight: 600;
 				line-height: normal;
 				letter-spacing: -0.24px;
+				min-width: unset;
 			}
 		}
 
@@ -1140,6 +1152,7 @@ label {
 		border-radius: 10px;
 		border: 1px solid #B1B1B1;
 		background: #FFF;
+		min-width: unset;
 		&.close {
 			svg {
 				transform: rotate(180deg);

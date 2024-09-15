@@ -354,6 +354,9 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
 }
+.box .boxLabel {
+  min-width: 100px;
+}
 
 input,
 select {
@@ -437,6 +440,7 @@ select:focus {
 select {
   padding-right: 30px;
   background: #fff url(../img/ic_select_arr.svg) center right 12px no-repeat;
+  min-width: 100px;
 }
 select:active, select:focus-visible {
   outline: 1px solid #000;
@@ -455,6 +459,7 @@ select:active, select:focus-visible {
   cursor: pointer;
   margin: 0 2px;
   transition: 0.2s;
+  min-width: 100px;
 }
 
 .btn-blue {
@@ -643,6 +648,7 @@ label input[type=radio]:checked {
   margin-bottom: 20px;
 }
 .btnWrap [class*=btn] {
+  min-width: 100px;
   height: 38px;
   border-radius: 8px;
 }
@@ -688,6 +694,8 @@ label input[type=radio]:checked {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.24px;
+  width: 100%;
+  text-align: center;
 }
 .toggleBtnBox .toggleBtn input {
   display: none;
@@ -741,6 +749,7 @@ label input[type=radio]:checked {
   padding: 12px 16px;
   border-radius: 8px;
   background: #242424;
+  text-align: center;
   color: #FFF;
   font-family: Pretendard;
   font-size: 12px;
@@ -768,7 +777,7 @@ label input[type=radio]:checked {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 .tray .count {
   color: #4A7CE2;
@@ -1079,6 +1088,7 @@ label input[type=radio]:checked {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.24px;
+  min-width: unset;
 }
 .grid table .lock {
   width: 16px;
@@ -1132,6 +1142,7 @@ label input[type=radio]:checked {
   border-radius: 10px;
   border: 1px solid #B1B1B1;
   background: #FFF;
+  min-width: unset;
 }
 .sectionTit .accodionBtn.close svg {
   transform: rotate(180deg);
